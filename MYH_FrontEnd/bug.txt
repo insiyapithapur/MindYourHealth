@@ -1,0 +1,10 @@
+Home_Screen
+1.  in place of sleep , water , water and cycle tracking show some average values sp card 
+    looks good and have good dashboard (bcz dashboard give info in short n sweet manner)
+2.  without login and SignUp the UserID in homeScreen will come 
+3.  in SignUp login though there is input error it is navigating to next page 
+4.  keyboardAvoidingView
+5.  backend calucation on which unit
+6.  from frontend only you send calucation of tdee and bmr just send value to backend it will 
+    store it 
+    

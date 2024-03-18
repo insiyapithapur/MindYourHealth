@@ -1,0 +1,12 @@
+from django.contrib import admin
+from . import models
+
+# Register your models here.
+admin.site.register(models.User)
+admin.site.register(models.UserInformation)
+admin.site.register(models.FoodItems)
+admin.site.register(models.WorkoutDairy)
+admin.site.register(models.MealDairy)
+admin.site.register(models.CalorieManagement)
+admin.site.register(models.HabitTracker)
+admin.site.register(models.MenstrualCycle)

@@ -1,0 +1,9 @@
+1(user_info api ) if user id already present in UserInformation table then have some message
+2(user_info api  and update-profile/<user_id>) make medical history cannot be mandatory field
+3medical history can have "" (empty string) that means user will see noting 
+4Make Cases for male , female and goals 
+5Make (user_info api  and update-profile/<user_id>) in one url
+
+1.  steps , water , sleep , Menstrual Cycle , oneInfo 
+2.  Already there api get,post,patch,delete method
+3.  if any parameter for TDEE get update then Calorieperday count should be updated

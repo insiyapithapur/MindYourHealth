@@ -1,0 +1,14 @@
+
+changed colors light <-> dark 
+removed condition in theme provider colorScheme === "dark" ? DarkTheme :
+
+
+import { Redirect, Slot } from "expo-router";
+import React, { useEffect } from "react";
+import { Text, View } from "react-native";
+
+const index = () => {
+  return <Redirect href={"/(onboarding)/Screen1"} />;
+};
+
+export default index;

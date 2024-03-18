@@ -1,0 +1,28 @@
+1.  Authentication  
+2.  Profile includes :-  name , email , password , age , gender , weight Log , phone no ,
+    Sleep Log , Step Log , intake cal Log ,medical history (Blood grp , activity level , medical history , Saved) 
+3.  Recepie(Text , Video with description) or Workout(Video with description) or   
+    meditation(audio with text) or yoga(video or Image with Text) or Diet Program posting
+4.  Daily Diet Dairy (Barcode , Nutrition table scanner) 
+5.  Daily Workout Dairy
+6.  Menstruation Cycle tracking
+7.  filters (veg , non-veg , upper body workout , lower body workout etc)
+8.  Category Corner  Workout , meditation , Diet Programs , Yoga
+9.  Recepie(Veg , Non-Veg) 
+10.  Book Appointment
+
+Future Explorations
+1. Store to sell Health products
+2. ChatBot
+
+
+Features for Trainer 
+1.  Profile
+2.  Manage Client Requests
+3.  See Clients Progress
+4.  Post Diet programs or Recepie or Workout or meditation or yoga
+
+Future Explorations
+1.  Live Streams
+2.  Chat with Clients
+3.  Video call with clients

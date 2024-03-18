@@ -1,0 +1,41 @@
+Profile Details
+
+Except Password all will be shown in Profile section
+1.  Username          SignUPScreen
+2.  email             SignUPScreen  and LoginScreen
+3.  password          SignUPScreen  and LoginScreen
+4.  Age               GenderAgeHeightScreen
+5.  Gender            GenderAgeHeightScreen
+6.  activity level    ActivityScreen
+7.  Motive            MotiveScreen
+8.  Phone no          Manually enter in profile section
+9.  weight            CurrentAndTargetWeightScreen
+10. height            GenderAgeHeightScreen
+11. Blood grp         Manually enter in profile section
+12. medical history   Manually enter in profile section
+11. Sleep Log         Manually enter in Home screen and shown graph day wise in profile section
+12. Step Log          Manually enter in Home screen and shown graph day wise in profile section
+13. Intake cal Log    get from each day cal intake count
+14. weight Log        Manually enter profile section and shown there only
+
+Daily Diet Dairy
+(partition Breakfast , lunch , dinner , snack)
+1.  Meal name 
+2.  Meal cal
+3.  Quantity :- plate / bowl / ml / number
+
+Daily Workout Dairy
+1.  Workout name
+2.  Sets / Time 
+
+Menstruation Cycle tracking   Manually enter in profile section and shown calender in profile section
+1.  Start Date
+2.  End Date
+3.  Month
+4.  Year
+
+Saved
+Recepie or Workout or meditation or yoga or Diet Program posting
+
+Book Appointment
+1.  Edit What dietician or trainer will see
