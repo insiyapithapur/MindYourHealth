@@ -1,12 +1,14 @@
 import { AntDesign, Ionicons, MaterialIcons } from "@expo/vector-icons";
+import axios from "axios";
 import Colors from "constants/Colors";
-import { router } from "expo-router";
+import { router, useLocalSearchParams } from "expo-router";
 import React, { useState, useRef } from "react";
 import { View, Text, TouchableOpacity, TextInput, Image, Keyboard, TouchableWithoutFeedback, FlatList } from 'react-native'
 
 interface WorkoutSuggestion {
     id: number;
     name: string;
+    image_url: string;
 }
 
 export default function AddWorkout() {
@@ -14,26 +16,47 @@ export default function AddWorkout() {
     const [workoutSuggestions, setWorkoutSuggestions] = useState([]);
     const [isSearchBarActive, setIsSearchBarActive] = useState(false);
     const searchInputRef = useRef<TextInput>(null);
+    const  token  = useLocalSearchParams();
+    console.log('token', token);
+    console.log('token.date',token.date);
+    const date = token.date;
 
-    const generateSuggestions = (text: string) => {
+    const generateSuggestions = async (text: string) => {
         if (text === '') {
             // If search text is empty, clear the workout suggestions
             setWorkoutSuggestions([]);
         } else {
-            // Example list of workout suggestions
-            const suggestions: WorkoutSuggestion[] = [
-                { id: 1, name: 'Running' },
-                { id: 2, name: 'Cycling' },
-                { id: 3, name: 'PushUps' },
-                // Add more workout suggestions as needed
-            ];
+            // // Example list of workout suggestions
+            // const suggestions: WorkoutSuggestion[] = [
+            //     { id: 1, name: 'Running' },
+            //     { id: 2, name: 'Cycling' },
+            //     { id: 3, name: 'PushUps' },
+            //     // Add more workout suggestions as needed
+            // ];
 
-            // Filter suggestions based on the entered text
-            const filteredSuggestions = suggestions.filter((workout) =>
-                workout.name.toLowerCase().startsWith(text.toLowerCase())
-            );
+            // // Filter suggestions based on the entered text
+            // const filteredSuggestions = suggestions.filter((workout) =>
+            //     workout.name.toLowerCase().startsWith(text.toLowerCase())
+            // );
 
-            setWorkoutSuggestions(filteredSuggestions);
+            // setWorkoutSuggestions(filteredSuggestions);
+            try {
+                // Make an HTTP GET request to your backend API
+                const response = await axios.get(`http://192.168.83.61:8000/autosearchWorkout/?name=${text}`);
+                console.log('API response:', response.data);
+                
+                // Extract meal suggestions from the response data
+                const suggestions: WorkoutSuggestion[] = response.data.Payload.map((item: any) => ({
+                    id: item.id,
+                    name: item.name,
+                    image_url : item.image_url
+                }));
+    
+                // Update the frontend state with the received suggestions
+                setWorkoutSuggestions(suggestions);
+            }catch (error) {
+                console.error('Error fetching meal suggestions:', error);
+            }
         }
     };
 
@@ -53,8 +76,16 @@ export default function AddWorkout() {
     };
 
     function handleAddWorkout(selectedWorkout) {
-        console.log("selectedWorkout", selectedWorkout)
-        // router.push({pathname: "/(main)/AddMeal", params: selectedWorkout});  
+        console.log("selectedWorkout", selectedWorkout);
+        const name = selectedWorkout.name;
+        console.log("name in searchworkout",name);
+        const image_url = selectedWorkout.image_url;
+        router.push({pathname: "/(main)/AddWorkout", 
+            params: {
+                'name' : name,
+                'image_url' : image_url,
+                'date' :  date
+            }});   
     }
 
     function handleBack() {
@@ -106,26 +137,11 @@ export default function AddWorkout() {
                     />
                 </View>
 
-                {isSearchBarActive ? null : (
-                    <View style={{
-                        marginTop: 100,
-                        // backgroundColor: '#875B70', // Removed background color
-                        opacity: 0.7,
-                        borderRadius: 10,
-                        alignItems: 'center',
-                        flexDirection: 'column', // Changed flexDirection to column
-                        padding: 10,
-                    }}>
-                        <Image source={require('../../assets/images/activity1.png')} style={{ borderRadius: 60, width: 300, height: 300 }} />
-                        <Text style={{ marginTop: 10 }}>Find inspiration for a workout</Text>
-                    </View>
-                )}
-
-                {workoutSuggestions.length > 0 && (
+                {isSearchBarActive || workoutSuggestions.length > 0 ? (
                     <FlatList<WorkoutSuggestion>
                         style={{ flex: 1, marginTop: 10 }}
                         data={workoutSuggestions}
-                        keyExtractor={(item) => item.id.toString()}
+                        keyExtractor={(item) => item.name}
                         renderItem={({ item }): JSX.Element => (
                             <View style={{
                                 padding: 10,
@@ -138,7 +154,7 @@ export default function AddWorkout() {
                                 paddingLeft: 30,
                             }}>
                                 <View style={{ flexDirection: 'column' }}>
-                                    <Text style={{ fontSize: 20, color: '#FFFF' }}>{item.name}</Text>
+                                    <Text style={{ fontSize: 20, color: '#FFFF' }}>{item.name}</Text> 
                                 </View>
                                 <TouchableOpacity onPress={() => handleAddWorkout(item)}>
                                     <MaterialIcons name="add-circle-outline" size={30} color="white" />
@@ -146,6 +162,16 @@ export default function AddWorkout() {
                             </View>
                         )}
                     />
+                ) : (
+                    <View style={{
+                        flex: 1,
+                        justifyContent: 'center',
+                        alignItems: 'center',
+                        marginTop: 50,
+                    }}>
+                        <Image source={require('../../assets/images/BackGround.jpg')} style={{ borderRadius: 60 }} />
+                        <Text>Find inspiration for a healthy activity</Text>
+                    </View>
                 )}
             </View>
         </TouchableWithoutFeedback>

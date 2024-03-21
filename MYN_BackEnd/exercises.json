@@ -1,0 +1,223 @@
+[
+  {
+    "name": "3/4 Sit-Up",
+    "force": "pull",
+    "level": "beginner",
+    "mechanic": "compound",
+    "equipment": "body only",
+    "primaryMuscles": [
+      "abdominals"
+    ],
+    "secondaryMuscles": [],
+    "instructions": [
+      "Lie down on the floor and secure your feet. Your legs should be bent at the knees.",
+      "Place your hands behind or to the side of your head. You will begin with your back on the ground. This will be your starting position.",
+      "Flex your hips and spine to raise your torso toward your knees.",
+      "At the top of the contraction your torso should be perpendicular to the ground. Reverse the motion, going only ¾ of the way down.",
+      "Repeat for the recommended amount of repetitions."
+    ],
+    "category": "strength",
+    "images-url":
+      "https://www.bing.com/images-url/search?view=detailV2&ccid=I68oWaVs&id=0B546232E6DE1F7951A6319AB0F064DCE9C36F68&thid=OIP.I68oWaVscjzYfeVbaAnhtAHaCP&mediaurl=https%3a%2f%2fwww.meanmuscles.com%2fwp-content%2fuploads%2f2020%2f09%2f3-4-sit-up.png&exph=309&expw=1024&q=3%2f4+Sit-Up&simid=607997198888223757&FORM=IRPRST&ck=BCA3FC086D5BEDFB631C4FB9CA43202F&selectedIndex=34&itb=1" 
+  },
+  {
+    "name": "90/90 Hamstring",
+    "force": "push",
+    "level": "beginner",
+    "mechanic": null,
+    "equipment": "body only",
+    "primaryMuscles": [
+      "hamstrings"
+    ],
+    "secondaryMuscles": [
+      "calves"
+    ],
+    "instructions": [
+      "Lie on your back, with one leg extended straight out.",
+      "With the other leg, bend the hip and knee to 90 degrees. You may brace your leg with your hands if necessary. This will be your starting position.",
+      "Extend your leg straight into the air, pausing briefly at the top. Return the leg to the starting position.",
+      "Repeat for 10-20 repetitions, and then switch to the other leg."
+    ],
+    "category": "stretching",
+    "images-url": 
+      "https://www.bing.com/images-url/search?view=detailV2&ccid=w7Igz4Wo&id=CFD4DD3DBA1A38A5B0ED56496EDAAD6D85806937&thid=OIP.w7Igz4WoezH16a1meuJCgQAAAA&mediaurl=https%3a%2f%2fmobilephysiotherapyclinic.in%2fwp-content%2fuploads%2f2022%2f01%2fimages-url.jpg&exph=118&expw=208&q=90_90_Hamstring&simid=608018106828946350&FORM=IRPRST&ck=F2D31D63B6388784ADC25F052597FD07&selectedIndex=31&itb=0"
+  },
+  {
+    "name": "Ab Crunch Machine",
+    "force": "pull",
+    "level": "intermediate",
+    "mechanic": "isolation",
+    "equipment": "machine",
+    "primaryMuscles": [
+      "abdominals"
+    ],
+    "secondaryMuscles": [],
+    "instructions": [
+      "Select a light resistance and sit down on the ab machine placing your feet under the pads provided and grabbing the top handles. Your arms should be bent at a 90 degree angle as you rest the triceps on the pads provided. This will be your starting position.",
+      "At the same time, begin to lift the legs up as you crunch your upper torso. Breathe out as you perform this movement. Tip: Be sure to use a slow and controlled motion. Concentrate on using your abs to move the weight while relaxing your legs and feet.",
+      "After a second pause, slowly return to the starting position as you breathe in.",
+      "Repeat the movement for the prescribed amount of repetitions."
+    ],
+    "category": "strength",
+    "images-url": 
+      "https://www.bing.com/images-url/search?view=detailV2&ccid=vdJBzW7e&id=5F0C5A6AE99DA89DF7E74321F997E00DEA29F6DB&thid=OIP.vdJBzW7eDMYqui0h2fVPcQHaHa&mediaurl=https%3a%2f%2fcdn.shopify.com%2fs%2ffiles%2f1%2f1039%2f9630%2fproducts%2fGAB100_5488_1024x1024.jpg%3fv%3d1626261849&exph=1000&expw=1000&q=%22Ab_Crunch_Machine&simid=608008387291406630&FORM=IRPRST&ck=8A46AD832B248A78056C55D75A7CB15D&selectedIndex=2&itb=0"
+  },
+  {
+    "name": "Ab Roller",
+    "force": "pull",
+    "level": "intermediate",
+    "mechanic": "compound",
+    "equipment": "other",
+    "primaryMuscles": [
+      "abdominals"
+    ],
+    "secondaryMuscles": [
+      "shoulders"
+    ],
+    "instructions": [
+      "Hold the Ab Roller with both hands and kneel on the floor.",
+      "Now place the ab roller on the floor in front of you so that you are on all your hands and knees (as in a kneeling push up position). This will be your starting position.",
+      "Slowly roll the ab roller straight forward, stretching your body into a straight position. Tip: Go down as far as you can without touching the floor with your body. Breathe in during this portion of the movement.",
+      "After a pause at the stretched position, start pulling yourself back to the starting position as you breathe out. Tip: Go slowly and keep your abs tight at all times."
+    ],
+    "category": "strength",
+    "images-url": 
+      "https://www.bing.com/images-url/search?view=detailV2&ccid=yS6YAiyM&id=057B1B1F772CBEE862D0D780477D2C7C4CC3D610&thid=OIP.yS6YAiyMw9cRVcCw7CulzgHaHa&mediaurl=https%3a%2f%2fi5.walmartimages-url.com%2fasr%2f911257ba-8bb5-4769-8d38-0d2e5f97c6f0_1.174378124fa14974f381f6b07b08790f.jpeg&exph=2500&expw=2500&q=Ab_Roller%27&simid=608025932253781512&FORM=IRPRST&ck=D94582A109E7E24EDEF409B0D36458FA&selectedIndex=4&itb=0"
+  },
+  {
+    "name": "Adductor",
+    "force": "static",
+    "level": "intermediate",
+    "mechanic": "isolation",
+    "equipment": "foam roll",
+    "primaryMuscles": [
+      "adductors"
+    ],
+    "secondaryMuscles": [],
+    "instructions": [
+      "Lie face down with one leg on a foam roll.",
+      "Rotate the leg so that the foam roll contacts against your inner thigh. Shift as much weight onto the foam roll as can be tolerated.",
+      "While trying to relax the muscles if the inner thigh, roll over the foam between your hip and knee, holding points of tension for 10-30 seconds. Repeat with the other leg."
+    ],
+    "category": "stretching",
+    "images-url": 
+      "https://www.bing.com/images-url/search?view=detailV2&ccid=hNVxSKlk&id=44DBED3AE6B944940147CB40381564F71E67A4EC&thid=OIP.hNVxSKlkXZEY1xwb3PmEmwHaEf&mediaurl=https%3a%2f%2fcdn.jackedgorilla.com%2fwp-content%2fuploads%2f2022%2f03%2fBest-Adductor-Exercises-Cossack-Squats.jpg&exph=485&expw=800&q=Adductor+exercide+&simid=608041166475176025&FORM=IRPRST&ck=8223879CBD2873B22F41642F792F3E6A&selectedIndex=31&itb=0"
+  },
+  {
+    "name": "Advanced Kettlebell Windmill",
+    "force": "push",
+    "level": "intermediate",
+    "mechanic": "isolation",
+    "equipment": "kettlebells",
+    "primaryMuscles": [
+      "abdominals"
+    ],
+    "secondaryMuscles": [
+      "glutes",
+      "hamstrings",
+      "shoulders"
+    ],
+    "instructions": [
+      "Clean and press a kettlebell overhead with one arm.",
+      "Keeping the kettlebell locked out at all times, push your butt out in the direction of the locked out kettlebell. Keep the non-working arm behind your back and turn your feet out at a forty-five degree angle from the arm with the kettlebell.",
+      "Lower yourself as far as possible.",
+      "Pause for a second and reverse the motion back to the starting position."
+    ],
+    "category": "strength",
+    "images-url": 
+      "data:image/jpeg;base64,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"
+  },
+  {
+    "name": "Air Bike",
+    "force": "pull",
+    "level": "beginner",
+    "mechanic": "compound",
+    "equipment": "body only",
+    "primaryMuscles": [
+      "abdominals"
+    ],
+    "secondaryMuscles": [],
+    "instructions": [
+      "Lie flat on the floor with your lower back pressed to the ground. For this exercise, you will need to put your hands beside your head. Be careful however to not strain with the neck as you perform it. Now lift your shoulders into the crunch position.",
+      "Bring knees up to where they are perpendicular to the floor, with your lower legs parallel to the floor. This will be your starting position.",
+      "Now simultaneously, slowly go through a cycle pedal motion kicking forward with the right leg and bringing in the knee of the left leg. Bring your right elbow close to your left knee by crunching to the side, as you breathe out.",
+      "Go back to the initial position as you breathe in.",
+      "Crunch to the opposite side as you cycle your legs and bring closer your left elbow to your right knee and exhale.",
+      "Continue alternating in this manner until all of the recommended repetitions for each side have been completed."
+    ],
+    "category": "strength",
+    "images-url": 
+      "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAsJCQcJCQcJCQkJCwkJCQkJCQsJCwsMCwsLDA0QDBEODQ4MEhkSJRodJR0ZHxwpKRYlNzU2GioyPi0pMBk7IRP/2wBDAQcICAsJCxULCxUsHRkdLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCz/wAARCAEUARQDASIAAhEBAxEB/8QAHAABAAIDAQEBAAAAAAAAAAAAAAUGAQQHAwII/8QASBAAAgEDAgQDBgIHBgMFCQAAAQIDAAQRBRIGITGRE0FRBxQiYXGBFTIjQlJicqGxM4KiwdHwJUOSFiREo+FTVFVjhJPD0vH/xAAaAQEAAwEBAQAAAAAAAAAAAAAAAQIFAwQG/8QAKxEBAAICAQQBAwIHAQAAAAAAAAECAxEEEiExQRMFFFEycSJCYYGRsfDh/9oADAMBAAIRAxEAPwDrdKUoFKUoFKUoFKUoFKUoFKUoFKUoFKZ+dKBSlKBSlKBSlKBSlKBSlKBSlKBSlKBSlKBSlKBSlKBSlKBSlKBSlKBSlKBSlKBSlKBUVq+qCwSGOIK93cEiJDz2Iv5pGHTA5AZPU/Ktu/uxZWs0+AzLhY1JOGkY4UH5eZ+lcm1bXbu7vJHnutrQTSW0igFWfYx2pEqLjHPzPn8+Xlz5uj+Gvl6MOLrnqnwndTm3nxLq5DO3/wAzefscf05VowXlxAH/AA2e/jlPNfdm+AkebpN+jP3FeM+kNLsZN0koVJZ1fc0o35xhnOPLmMcuX0EtDaW9hbqwQmVkAYuGfBIzgKmKzIyancT3asYPVoWbhzWbzU4ZYb+3MF9a7PFI2+FcRtkLKm0nB5YYeR+Rqeqj8K3U13epP4SiN4rlVeHfsaNSoDusuGHMYxlvrjpeK1sF7XpuzK5OOuPJqvgpSld3nKUpQKUpQKUpQKUpQKUpQKUpQKUpQKUpQKUpQKUpQKUpQKUpQKUpQKUpQQnETqlrbbunvCvj+HH+tchlKza08UZI98vzdIRhsMWYMp8uS9a6bxVdwqbeNm5Q72IDYZ5GAIUfIYyTVL0O0hurqC9VI/drXxI7dkx8cnNGc/rDzHPB+XLni58vTltLW4+GbY4W9EjVkc/2hh2ZIGQCQTz6+Veco5Nn8uDnlXlcSMXXBwMHHPHT6VhFvbu1VxY3bxyq3hssJdJApKnIB6Hy9a8VK2me0NKbRWNzKQ4ejcXZZbfEcMLRPIRGAm/a4VOe7JwM8hVrqL0PTI9L0+C3VNsjs9zceX6aU7mHU8h0HPyqUr6HBT46REvn+TkjJkma+ClKV2ecpSlApSlApSlApSlApSlApSlApSlApSlApSlApSlApSlApSlApSlB8yOkSNI7BURSzMfID6VWr7Ubu5ZkVngtue1EO2Rx6yMOf2B7+W/q91GPBtAw3MwlmA8kXmqt9Tz+3z5wNzKuDjpWRzeRbq+Ok/u1uFx418l4/ZHzxRFy6ZVwfzA8+XrWpGz22ooUUCPU4nDKBtHvdsMlh5ZZf6VsrcW7ytAHUyqAWQHJAPPJFeOqxsljJcoP0lhLBex/VHCsv3UkV4KamdNnFM9XT6nt/wB/dtkiVlDyLGjYR3kyBEpOGZvpVvt9Y0EiOCG9hAjRY0DB0XaowPidQv8AOqWsiOInjIZJFSRCehRgGB5V5RzKjXCso3Ruqr+8khyhx3B/hNenFnnDE6h4eRxvmnVp8OmAhgCCCCAQQcgg+YNZqj295fWozbXHhqeZjIDxn+63Ltitxdd1jkM2TfWF/wDKQVoU5lLRuY0zLcHJE9u62Uqrtr2rKATHZY9dkp//ACV9LruqAgvb2si+YQSRt9iWYfyq33eL3/pX7PL/ANKzUqFh4gs3wJ4Z4DnmSolQfdPi/wANb0WqaVLyS7gz6O3hntJiu1c1L/plwthyU/VVuUrXmvLOCJppZ4VjUZ3F1wfLlzrTttYgnuVtmjMRkXdAzOrLL8gV5Z+9Wm9YnUyiuO9om0R2hKUpSruZSlKBSlKBSlKBSlKBSlKBSlZoMUpSgUpSgUpSgV5XEyW8MszdEUkD9pugX7161CaxK0kkdsCQiDxHx5u3IA/Qf1rjny/FSbO2DH8t4r6Qdw7M7yM+6R2LOfVj/vlUfeXAihHP4mO1R5k+grN6l5E25PjXOCrciPmDVH4j1zVLTV5reBYvCg2R2sk0BYTAhcyxeIdpVjnacdAPpWDhxWzTOn0GXLXDWN+FrgsVjnF94m13VfHd22oqDJ5ljtAFautaql3H7nZkm13K1xPgqbhlOQsYPPYOufP6D4q/Ld6nciP3u6knC45E7Yww8xGgCfTlWfF3qcA/CMtgMcD96u1cXRO5l9ZwPpVccxlzTufwmdKvcxmxkPxqWe0Y+Y/M0R/mV+4qVNjfXk8UNl4XjyxM2JW2bvBIkAVsEZ5tVOVmDKykhlIZSOoIOQRVy4W1C51DX9MjMaIlta3ssmwkmRjEIt7Z6DnyHzq9cUWvH9Xk+r8KaRbkYvGpmf3/APW/Fo3EgG2SxJbl8Sz2+D/jr3TQOIW6x2yeniXPP77EP9au4pXvjh44/L4aedl/op8eg8RIDl9OPoPFmJx94q+JbbW7Y4lsJHGPz2mJ0J+i4futXOlTPExyiObk33Use/vyGm3uT627qO7ACvsWOtSYC6a+Cf8AmvDGB8zlj/SrjimKr9lj9rff5PUQoOq8NatfWU1u9vzLrKptJ4s5ToGEm0HqeVVkWfF3DLrcpbXTWlnKsjM8Uk1lnk5Z4smVB6spI+Y8uyYFMfWu1MFaRqHG/JtfvMd1U0HjbSNXaG2nHuV7IB4aySI9rcHpi2uRhSfQEA/I4q15qs6twTw3qfvMiW/uV3Odz3FmFUOwGP00DAwsD55XPzB51XDJx7wd/aL+LaNH+t+lkWKMfP4riLl6+Ig9RXZ59RPh0mlQOhcVaJrwVLaUxXfh+I1pcFRKVHV4mUlHUeqsfnjpU9UoKUpQKUpQKUpQKUpQKUrNBilKUClKUClKUCoTUrLUWnluLbZIjKhaPpKCo2/Du+E9xU3XnNNDbxTTzyJHDCjyyyOQqJGg3MzE8sAVzyY65K9NnXFltit1VVNpY5VZZEyQSrD8rqfMMp55qPn0uxulKhkIyW8KZUdMnqdkgK9qqOoceX91qN1cfh9m1sZWW3G66huPd0JCEyK+NxHM5Tz6VtWvF+m3O1HklsZ+m27Ec0BPotwqg91H1rFycXJSdxHZtYuVjvGpnUpVuFba4YKYHtWIz49vKDCAP1jG5I+wxXzNrFjp+p6bw9Z2cBtGFvaGZi4uHaaMsZgB+jIH6wPXJ/vej6vfvFsaWPw3UbWVF2svqpT/AFrT8GzklS6KgThHTxB1YOu09QajHkrH6nty5cuasRe86j+6L1m306ySKdcwPPKY1iTLxvtXczIvNhjlnHLnUzwlrHCWiRXN3e6gX1C6RYxFBaXsngQA7thfwgu4nm3PHIDyr70rhnT9WupLa7SS5tjIlzdNJI4dAilUjSVSHGT6Ech8qsaezngNSCdLd/PEl9fMvbxa0eLSJr1vL9R+qZrY/terdff5/Zqze0zhiIP4cGoSFQSNy20KnHzmmB/lWs/tQ0p22Wem3Nw2QAokySfpbJLVkg4Q4MtseHoOlkjoZbaOY95gxqajjihRY4kSONAFVI1CKoHIABeVe3u+f7OfnjTjO5P/AA/hO7Kk/C0lreuv3aUQrWX4l9pdmhur7hhDaL8UnhRneqDmS3u9xNIAPXwmroVMfSiNobQOItN4htWntNySwmNbu2lK+LAzruU5UlSrdUYHB+oIEzXOL+OPhfjTT723VYbDVtsVyifDGFuZRHJgdPhkKSfLe3rUtxfxaujp+H6eySavOhIHVLWPp4suPTyHmeXqVbTpcaVy/gviDiObVYNPnubvUoJvGNy9yqloAqbvGVwAQgOFwfM4HSuoUidomNFKzWKlCicYcN2cNu+vaUq2OoWU0dzM9qNgfLBfH2L8IkTOScfEMg5zytOhaidV0jTNQZQslzbqZ1X8qzoTHKo+QYHFR/Gl1Ha8O6nuYA3Hg2i58/FkG7soY/avvg6CSDhjQFkGHltTeMPT3uR7oD/FUJ9J+lKVKClKUClKUClKUCs1is0GKUpQKUpQKUpQK5b7Q+KRI03DtkQyIyHU5VOcupDi2XHLkcF/mMeRq6cW62dB0S8vY8e9OUtLLcAR7xLnDEHl8IDN/d+dfnxnZmZ5HZmZmZmYkszMckseuT51A+myef8AX/OvFznyr13KeXxf7+teTbhzKnHqKkbFnqOo2BAgkPhZy0EuWhb+75fUYq9cLzNxJemzSCa3eOLx7mZcSwRRBgvwscHcx5KCPI+lc73KOfQcz8sV2/2caCdL0b8QnVlvNZEVwysMGK1Td4CfUglz/Fj9WuN8FLzuYd6cjJSNRK22On2enQC3tY9qZLOzHc8j9NzseZNbf+lKV1iIiNQ4zMzO5KUpUoKUrR1e5vbTTNSubG1kuryG2ka1giXc0kuMKAvng8yPlQUX2kXenmbQrI3Q97DXLPaqitiKZVCySSZ3KcrhR55J/UzVNsLW+1a9liRZLrVb5naSWaXnv3c5pNnIIg9R0IwMkVrrpur6vfyJKLi61ee48SVQCs63G5d0swkCgKOQUcgqjpz5XDgzVbPR9TvdN1GEQXF9OIUumY7YrmI+C1rJnkNzD4T5nkfKqeXTxC88P6DZ6DZiCL9Jcy7Xvbplw88oHp5KOe0Z5fUkmZoKVdzZrFZrFBzv2jSyXk3DmgQt+kv7gF19DcSLZRns0p/u10GOOOKOOKNQscaJHGo6BEAUAVzuEnWvaVK+d1vokEhGega3j93Uf/clkI/hro/eohMlKUqUFKUoFKUoFKUoFKdqdqBSnanagUp2p2oFKdqdqDmftXaUW3DqDPhNc3rv6eIscYXP2LYrkx5V+huLtO0jUNC1L8T8VYbOJ76OW32+PFLChIaPd8JJ5qQeRz5dRwe10q9vbu0tIwqNcKZDK3xRxRJ+eRsenp5kj1qszEd5WiJtqIa9rb3d5NHa2dvJPcyZ2RQLufHmx8go8ySBVrteBdTZQ9/ew2zHn4VsnvDj5M7FU7Zq3aPp+maNb+DYx832+8TyYM9ww85GHl6Ach/MyzMrgMMVlZubMzrH2bGLgRWN5O8uS63w1c6SjXMMnvFqCBMWQI8JY4DMoJG09M+Xn1qf4N4g4ugSQ++NPpkIEMcN8GmUuowFgckOAoxnnjyx5i1XtvHIkisqtHIjI6sMqyuCpBHzqGtobeyiis4kCRRDbGPPGc5J9fWojmXnH0+/yv8AY0+Tq/l/C7afxXYzlY76M2kh5b877cn+LqPuPvViVkcKykMrAMrKQVIPmCOVczCIwxgc63tP1G/0twYWMlrnMls5+AjzMZ/VP+8enTFzZjtk/wAuOb6fE98X+HQKVp2Go2eow+LbvnBxJG4xJE37Lr/StytOJi0bhk2rNZ1MdylO1O1Sh87E3F9q7yApbA3EDyJ61yzinR7b/tP7vMxhttYMMiSqNyxTXINqS6EgFd4UuM9HPMHmOq9qpntAsDPplpfJkSWNz4buvVIbrEe7Pyfwz9qiVqzqXnwvruoW16/C3EAZdStlIsZ3Yt71EoJCGQ/mOASjfrAEHDId13rmvFN7HdaNwZxHEqrfx3MOZFGGV0XxJYiR5B0/r68+lUhEx7K8rmeK1t7m5l/sraGW4kPokaFz/SvXtVZ45vlsuHNRyxBujHaAj9lzvk/wK9ShB+zaCSccS61Pky3t8tqGbr+iBuJcfV5CD/D8q6FUBwdYtp/DWhQyACaW299nyMHxbtjcsD8xux9qn+1IJKU7U7UClO1O1ApTtTtQKU7UoFKd6d6BSnenegUp3p3oFKd6d6DzngguoZ7e4iSWCeNopo5FDJJG42srA+Rqqz+z/hnxUudNF3pd1GWZJLCdjHkjmGguN8e0+YAFW7vSomInymJmJ3CiXtlc6XMkcrmSKQZimC7A5A+JSuThh9f/AE8UnaNs8yh/MPSrzeWltfQSW9wuY38xyZGHR0PkR5VzpZlWe9tXY+NZ3E1tKGwDujcqGx6MMEfWsTlcb456q+G/xOV80dF/P+0s+x0yDyNQ17A45jqDlT/lW9C3P4T9RXpLEXUhvrXjiXv130gYrgg4Jxjlz9akYZ0Yc/TnWk2kalfXgg08wCZkeRluJDGpVCBlSFbnzr4vLLW9ENodUjto47mUwwvDcpJvcDdt2YD9Pl/Xn6Ipaa9cR2c5vStuiZ7piOaW2kW5s5fDmUf3WHUq69CKuek6nDqlqLhBskVjFPGTkxyjmRn0PUfWucFnx+fAIFWTgmOXdrUuT4Ja2hHo0qh3Y/YFR969XDyWi/R6eLn4azj+T3C50p3p3rWYJWpqVlHqOn6hYSY23dtNBkjkrOpCty9Dg/atvvTvQcQuLt30GPTZjie31sTBCeaiWMxSqB8pA2f467fXHeL7A2XEVyqKRHe3VjqEXnlbq4jjlA/vgk/WuxVEL29HOude0ItqOocLcPoWBvLmPxdv7NxKIN2PkqzGui9651Z/8Y9o99PzMGiW8+3PNRIiixUd2mI+lJVh0RQFUKoAVRtUAYAA5ACs07071KClO9O9ApTvTvQKU7070ClO9KBSnanagUp2p2oFKdqdqBSnanagUp2p2oFco49t59P1mS8tg4a+tI7yNkIUGe1HhyRnBBIYLGD/AB/cdX7VTfaFZGbSLa+UNv027jdihIbwZ8RMBj97wyfpUTG4WrMxPZ4yaRO9ta6tozNc2l1bw3aW7sPHWKVBIPDbo2M9Dz+tYjcSQhxyzyIIIOfmDXtwJqcZ4blilY50We4tmDH4vdzi5g6/usFH8NeWX2szKN7vJK+By3OS5H86xuXipjmJr7bXCzXyRMX9NQ3cNld6fdyuyJaytNKy/m8IRtlFHmW5KB+9Vcubu81jUn1K+Hxn4LeLO5LaEHIij/qT5nn8hKX6CWTYx5KdxHl0qKkZYzhcZrjGSenojw99qVm/X7bTNJM8MECF5pnSGFAcFnchQM/1rpuj6bFpNhb2aNvdcyTyecs783f/ACHyAqp8F6U80razOv6KPfDYAj87n4ZJvoOar96vlaXExdMdU+2Nz8/Xb448QUp2p2r3M0pSsM6JjcyLnpuIGe9Bzz2lARtw3cJtWbxL6EScgVUiJ1J+jBT/AP2rvpWoQapp9lfQsrCeJTIF/wCXMvwyRsPIq2QR8q5R7ReIYNQv4NPtPBlh0xnQzxuW3XUm0sowNuF27evXPpzk+BuJbaxS8sr+4hhsT4d3BJKJml94uDtkRQildnw7iSRzfzB+Gq3p0i+vLews7u9uGVIbaJ5XLEKDtHJQT5k4A+tUn2a27SW3EGsSkGXUNR8DJIJ2Wy7mP3d3qh6nNr0d1xLe3V9FNbahO8BKXJnFzDHKbqOSFEJ2xrtjXmBj8vkdvUPZ/aT2nC+lLPa+7yTm4vDuZWaZLiQyxysF6EqV5eWB9BJ4ha6U7U7VKpSnanagUp2p2oFKdqdqBSnalApSlApSlApSlApSlApSlArT1W0ivtN1KzlKKlzaTxF5OSxlkOHJ/dOD9q3KgOLbTVrzRpo9M8QzpNDK8cRXxJYkJ3KgchSRyYAnnt9eoc34SurmO71SxO4pe21pJdbuRSW1nLKMYA5h8dOiCrlI+MjyBqk6ddTw8TizvIZ4LprGZHSdCj5LC6QMGOSQuACfSriwOCc+fesXmb+Tu3uFEfH2/KFvnVWndiR0CjzJNeGh6PNrd94R3LaQ7ZL6VcghD+WJD+038hk+mc3cM11dW9tApe4uJvAgTOAXYdWPoOZJ9BXSdI0u30ixgs4fiKgyTykYaadsb5D9fL0AA8qni4fknc+FuXn+Guq+Zb0MUUEUUMKKkUSLHGiDCoijAUD5V90ryubm2s4J7q5lWK3gjaWaSQ4VEUZJNbL5/wAvuSSOJHkkdEjRWZ3kYKiKBkszE4AFUbUOPvHum0zhbT5dWvxyMio3u8fluPTl82ZR9ahpLjXPaPfS29pJNp/C1lMEmmHKW4cYIVfIyHrjooI6n89us4LDSLYabw/ax26BgjTFQ7yydDI5wWY/M/yHSsyvFdoF9B471ICXiLimPS4JP/CWDDO3HNGYGOLI+jVhOBOCDzn1nV7l84Zmu1Ck+fKGIf1rY1K/0XTrhl1C5knug43oqme5I6guu4KnyBP286rOr8cSzs9to8bQop8NpWZDMCRgJ4iDavn+Uk/vDpUbX6W3qnDPs80WK4OoarqlzLvaS2toLiJZYY+qK67dgx13PjPoehoB3eFLNFJuigYblZMlkU/CSD9vKpqzs7KeVZtVnZmdssJ4naGIPz3lEYknzyW5+nnUnrVlBbvpWo2F97yt2nu1xcbgZI76FvGheVThwxGOTDP6P7kjp0hbU6s19pljc2YhudQntILeNxJHMEuGAWV1J5DB3c1H2Fdf4f4bu9Eu7yZ9UkubeWBII7cRtGgKsG8VwXYbvIYA5HtTtBtrzWeNoNfuY4xBIt1eKqSeJ4M0NulqlvJkAhlyT0/V+VdWqYhSZmOxSlKsqUpSgUpSgUpSgUpSgUpSgUpSgUpSgUpSgUpSgU7UpQcw46tRZ8T8L6smFFyY7WUjzkifYd31WQf9NSjMNvL151t+0Kxa64fluY1Jn027tb2MKCzMN/guqgeeGz9q0AxKHcCG5ZBGCD5gg+lZXOj+Kstn6dbdZq09B1HSouLorK5ZvepLGUWTHaIhLKd7KWY53FRhcDzPrXSx0H0rnmm8F6ZqVzBr8st0l5FNBPbNFcKyrPayFRvhaLAA2rj4znnnGcVOXet63YSmKWC0cZGGZZEOPU4OP5V7MERTHEPDyJnJltP4WeuYcY399xNr1jwVpUpWFZFk1aZDlVZRvbcR5RjyzzYgdUqz2XEGs6jFKLbTYY7ho5BD7xMQqyYIUyBMnGcE4P8A6UzTdO1vhZeIDfR2UutayHj99/EYi0UL5dnEJUSZZixJJGSF9Ca7728/TMSs1pPZRi10HRlEOnWYWHcuAzqSQzs3q/M5+efWom71m81C6bTuH8xJl4xcRHY7xr8LSI45pEOXxZ3NkcxuCywF9q/u+mS2liksd5O5SdpAIyLfBVlV3PMsMKccsFufxVuaNq+k6XpZGXk1GQCa4Xw3XxpSpKxK+fyJnaOY8zyMhJq66iOzw4w0200fToGi3Ne3s0jSzldsaAR7n8FOgGWB/qedeNrqHD7TaFEI7iXQ9PiLeAsMQe4lwWLvGZACCQu7L5OD64MXxFdNd29hd3V+Lm5me48eJSGW0gRogibQOWfiOAAvoM5Yz+m30FtqI1SQXEVqdMa2hYWVwg+KCONCzBVUchz5/wBalHtKXWscMamzxXQMY2RmH32NomhViBuVozlep81HzqG1Hhq4KzzWHiSxKDIIMgToi/EAjdGAPQEefUk76mY4bLWlWN1imhjSR2lR8ssz5GRKuWBHPuORzhvnR7i74d1G30q9kF1p85H4XdBMNHg/2WOeBzwy8wpII+CTakJlFcH6ip1KGOaR095Bh2kEFb5CDG3XILAOvQ/Fy/XOevxMXVSSC2BkjkD88Vw/VoTBdfiMTiPx7p0uBExLQOzmWGU82wwxyG4kFAOeMt03QdcF9a6fcylQ1xuhuFHSO5jbwpFHyyMj5EVaFLVWelKVZyKUpQKUpQKUpQKUpQKUpQKUpQKUpQKUpQKUpQKUpQRGq6jDayRQuzIiwyXtzJsYqkMJBwW6ZPMgdTtqqLPFcwteKrRpOWuFQ4LIkn6RVYjlkZrV9oc+pRw6x7s8S2+y1hvC4ZpjC4jCpD+qMsfjJ546defPoeKtYttOttPg8FPATYLllMk+0flC7/gGByHwnpXi5OK2WIirQ4meuGZmye1d2huVlillQ3EKupjkKt8J2ZwCDg8uf+lQz6xrcbDbqV8QOQV55HXHphyRUK/vl1LLczzyylSoed5GbAVd2Nzenp/rz+2n3r8EchKgfHIVBf54FdcdJpWKy8+XLF7zaOy022v6k8JhbVdUsycZksGgwfP4lKq3Zq+A0gYt75bXW4ks8iT28zE+bZDrn7ioCB8geXLp51vQmRztXbkAk7njQY+rkCrz2Tjr8k+dJMzMB+YfQOD2rzNxJ+0a8djhSzSW/LHwCZGkOf2VXOfnXyDSJ2i9OjtuJ/ZsrcEc28WQ/sK21VH7TnBP0AFblvqNzBn3ee6tifzCObKuo8wDgH6Mpz61GKvMtlyQSCgYBSvIhsY6+VJlO0HaQHwIiW5nPXl/WpUT/vq2gn1GyKq+6OLWbS3CrDcoys8VxDGeSvyYfL6Ntrc1eaX8Dur2SRY7cQxSxGH4nlaVlEeZGIJDBgSAOgPXFVazimUalevnwPhSMHAEhiUu+CfIfDn+Ksa7dap+E6JokkRSOxhga6f8yyTwx+FGokHL4QzcvmKJ3qG1bu93wzrs3h/DIUlhOckGxYSNyA5fr9/lXtoV9L+H6papIysstnfRlW2kbv0EmP8AoQ/evnSYpYeDtVdhye31eYc/1ZVFqo+5H86hdLn8KXJJCtaXiMBk5wmQPsRn7VJ33D9BabcNdafp1yxy09pbyuf3mQE/zraqL4dV00LQ1fIb3C3Yg9RuXcAe9SlXcZ8lKUoFKUoFKUoFKUoHanalKB2p2pSgdqdqUoHanalKB2p2pSgdqdqUoKzrlrw/d3vuOqIs0d7YmWS3DOpK20yDxW8NlfAJGMHy7VW94a9ksJkjkmntJVAJjS7vPEQHodkgfrUBxRrd5c8UXV9p7sZrGZNO03aAwcxsYSgHQq7s2R6Ht0C+0KKeJBqtpBMkUe4zwl4xAdu6Ta4YOqg588cs1Sd+nSNOXLY8KvqOpae2s3VjoqndZXLWr3ck7gg7ZdiDHQt06Afs1srw/wADdRx5GVPPH4VKWx8/i/yqw6nw9w9PaxW2lX8Md9cPvguZNQ96iVEHxwiOKUvlwxxiNvynJGeflpPACQtdG7SfUFuLdYFWG2ktUQeKkrMks7q3xBdpwByYjzpvsanaMj0/2Z2mJW1jUNVkRWxBGUtY5Wxy/Iqt3kH+sJG1lER7xDK79VVy8cIB6c0O9v8AqFX2T2aWtw0zRLJYK8m6NTdeMIU2qPDWMq2eYJyZM/FjyrVm9l2qxKDaatZzHBJS4t5bcZ+Tozj/AA0RMqn7xEykIY1Q/qQRqo++0Z7k14vcW6HaWAbGcMyqcHn5mpG84e4q0ySSCTTlnZVbCwiK5RgRkNGOT/TC+R9K19C1b8LN1Bfae7Wd1u8ZJbYB1lTDCSIXCj0AcZ5YDdchiWkbwNJHDFDJJLI6RxquF3O5wAGbA+tStnpz3VyLdw8kq8p4IG2FeeCsk75AGeXL7HnUfq34VcX9idFItYykQd5w8UUE/iO2/B3kKBt6DA9PMytpqFxp97d3O22vGciOaQTfn/Sbt8boRnJ88H+dEwmTGtiPeLi1t3hs4ti22GMMZOTEiKrbiC3I88knzP5q5FFq2qagIIGf329kee6mTG1UOJJJZAnw7RkYGMElQOTjMxf6vdalFdkxQ26ErctHFvO+JT8W4yE9Dg56dcgYzUvYx6doOmQ3Vw2Lm+ijmkAy087H4xGgGTsBYc+YJbJJd8SRrSyJ15rTT9MSyERDXJhhVIdiyGKAiTJGNpy2wYx+t5eVfgs3seILWxkimlaG4mSSK3hMkzg2rybI4gebeWM8yPnVn0m0uNc1OTX9RUC0tnb3SIj9G7w5wRt/UQ5zj8zdMiPLR2qTPp/F9hrEgdYxdadqLFhgtDytpz6ZAD5+mPLmj8It+XaoQqxQqilUEaBVYEFVCgAEeor77UGMDp8qV0cTtTtSlA7U7UpQO1O1KUDtSlKB3p3pSgd6d6UoHenelKB3p3pXM+ONY1m01iKG01K6tIEtIRtgkZVeRizszAefMD7d4mdJiNumcqd64lBxvxFbyIfxt5lic5juUs3WTGRtfAD4/vA1uN7Q+JPiK3VjzDAZt4+RI6/2nl5U2adC1/irRuHmsoboXE13en/u1rZoJJ5BuCZ2kgcycL6np0OPjWeI4LHRNRvOdtfrbuttaXMlv7yJ5D4UZKRSOMAnJwfI1xrUeJNY1GeK4uriC5uo1EMbiOEvsySFCRL5EkggZ5n1r0isdVuoFmm0nXAuSwki024eEny29Dyz1qNp1CU4H0v8S4jsGcFrfS0OpzFgSDIh8O3BPqWJb+5XbmVWDKwBVgQwYZBBGCDXFdA12fhX8Q22hc3skLStfWV9byqsKlUjDAMMDJPTqTViT2o2/SSxtC37moOn8pYP86RJpRXR+G+IFkVWB0TVtzFVwXtopdrehw0Z/nX6CVlZVZTlWUMpHMEHmCK4Rr9/ba5qd1qNvDHGl1DCk8RuoJCZETwiwI2jBAXt8+V40HjjTbTSdJs9Rhv/AHu0tIrWaSCKOaJ/BHhq4ZJC3MAE8utIkmHQO9OXzqsJx3wc3576aE+k9ndr/MRkfzraj4u4PlOF1qyBPlK5iP8A5gFTtXTf1HTodQi2sSsqZMUg5FT1wfl/v61O800zI1jqke9VbfGZN4UHnh4ZYyHU/Q+fmCRVrj1nQZseFqumvnyS7gJ7Bs17t7leIUJhmUj9VlbsQaiY2vW2vLg/EOlGx1iz03TnaVpoLdoYpfDGx5GkbwiygIRyyDtXr0HU+I0+Z5buKOxmeaF9sgg8U+7OGKkbQTnOCPzHpVs12wuX9oOjWtiYxKIYTAbhmKAx21xMQ5CscciPynrXtw+41DVeJItOjR5Y5gl/HPMqKziablBIucpkNghQcY9aLRqVds+H+KZSDaRXkQ3EvJdp7tErSKY3kYyncTjkMIx5nmK3J9D4zt5Fubmzs9TiUqrCO4I8TAYBMZik6cuXQchyYh+k2ul6uobxWs4VcEHYZJZFB6bT8K9wa904esWOb2SW8B25ilYrbsV5jfChw30bI+VR3JmIUGHiyeCGH37hq+gsvhiWXTxJ7tsj+HbEzxmLAxgYkxy6nrUZxVxBw7r7aV+HQTxNawT284uBCm+CUqQgEcjH4SG5/vH1rtBMMEeSUihiUDmVSNFUfPAAFVb332earcXGktBZtLqMqvIstk9st7LGwkBExRdzZAP5ufzzznWlZnba4M1SXVtAsZpjme2aawnYdJGtW8IScyTlhtJ+ZNWLvXhaWdlYwJb2VtBbQLkrFbxpGgJ6nagAz6171ZQ7070pQO9O9KUDvTvSlA70pSgdqdqUoHanalKB2p2pSgdqgNZ4S0DXbhLq+S68VIhFm3uZYVZRnBZUOM+Wan6UEfFomhQxRQpplhsijSNd1tCx2qMDJZck+tZ/BtB/+E6Z1/8Ac7f/APSt+lBrw2VhbEG3tLWE8xmCGOM/4AK2P99aUoH++teElnYzZ8a1tpM9fEijfP13CvelBCXnCfCN9s940awypYhoI/d35+rW5U/zrTHAPA4DD8KB3Hdua6vCw8sKxlyBVnpTSdqhJ7O+DnOY4L2E+Rhv7rl9N7MK1pPZtoRB8LUdZj+s9vKP/Mhz/OrxSo0blzqX2YQN/Z63N/8AU2FpL3KbK0ZPZjqce42+p6fJgFgrWUkDMRz2hklIGemcV1OlNG5cNPDvFIvorZNJ1AXwXMTHd4KrtK5N3uMOMHB+P7eVbVtwd7QrKTx4LERymQTbrPUrZWVwSQQJfMfWu0U5U0bcdutX9pGjNCuoXl9amUOYhcnTbnxAmN2Nit0yOuK15eMeJJra7hvNVLRXEZgdVtrSNijKVYIUj3cx1/liug8XcMT8QR2UtpPDFd2nioBcB/Clik2kqzICQQQMHB6n7QGk+zZNzvr9zHKm5Slpp5dY2A/9tO6hzn0UL9TUalMTCji7uLlo44vGupzEsVsi+PdXXhpyEcac2x5YxipvTuB+Nb+8s5rh30u1jdZxPM0JuYyp5eFBExO/0LMMfUYrq2m6Po2jw+BpllBaxE5YQp8TE/tu2WP3Nb/KkQTbbCAqqqSWIUAs2MsR5nHnWe1KVZU7U7UpQO1O1KUDtTtSlA7UpSgVmsVmgxSlKBSlKBSlKBSlKBSlKBSlKBSlKBSlKBSlKBWaxWaDFKUoM1is1igUpSgUpSgUpSgUpSgUpSgUpSgUpSgUpSgUpSgUpSgUpSgUpSgUpSgUpSgUpSgUpSgUpSgUpSgUpSgUpSgUpSgUpSgUpSg//9k="
+  },
+  {
+    "name": "Alternate Hammer Curl",
+    "force": "pull",
+    "level": "beginner",
+    "mechanic": "isolation",
+    "equipment": "dumbbell",
+    "primaryMuscles": [
+      "biceps"
+    ],
+    "secondaryMuscles": [
+      "forearms"
+    ],
+    "instructions": [
+      "Stand up with your torso upright and a dumbbell in each hand being held at arms length. The elbows should be close to the torso.",
+      "The palms of the hands should be facing your torso. This will be your starting position.",
+      "While holding the upper arm stationary, curl the right weight forward while contracting the biceps as you breathe out. Continue the movement until your biceps is fully contracted and the dumbbells are at shoulder level. Hold the contracted position for a second as you squeeze the biceps. Tip: Only the forearms should move.",
+      "Slowly begin to bring the dumbbells back to starting position as your breathe in.",
+      "Repeat the movement with the left hand. This equals one repetition.",
+      "Continue alternating in this manner for the recommended amount of repetitions."
+    ],
+    "category": "strength",
+    "images-url": 
+      "https://th.bing.com/th/id/OIP.dh8fvnOgo69G_YJmg336TwHaGO?w=202&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7"
+  },
+  {
+    "name": "Alternate Heel Touchers",
+    "force": "pull",
+    "level": "beginner",
+    "mechanic": "isolation",
+    "equipment": "body only",
+    "primaryMuscles": [
+      "abdominals"
+    ],
+    "secondaryMuscles": [],
+    "instructions": [
+      "Lie on the floor with the knees bent and the feet on the floor around 18-24 inches apart. Your arms should be extended by your side. This will be your starting position.",
+      "Crunch over your torso forward and up about 3-4 inches to the right side and touch your right heel as you hold the contraction for a second. Exhale while performing this movement.",
+      "Now go back slowly to the starting position as you inhale.",
+      "Now crunch over your torso forward and up around 3-4 inches to the left side and touch your left heel as you hold the contraction for a second. Exhale while performing this movement and then go back to the starting position as you inhale. Now that both heels have been touched, that is considered 1 repetition.",
+      "Continue alternating sides in this manner until all prescribed repetitions are done."
+    ],
+    "category": "strength",
+    "images-url": 
+      "https://th.bing.com/th/id/OIP.pTzWBPBo5enVavbLa_gnswHaEK?w=318&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7"
+  },
+  {
+    "name": "Alternate Leg Diagonal Bound",
+    "force": "push",
+    "level": "beginner",
+    "mechanic": "compound",
+    "equipment": null,
+    "primaryMuscles": [
+      "quadriceps"
+    ],
+    "secondaryMuscles": [
+      "abductors",
+      "adductors",
+      "calves",
+      "glutes",
+      "hamstrings"
+    ],
+    "instructions": [
+      "Assume a comfortable stance with one foot slightly in front of the other.",
+      "Begin by pushing off with the front leg, driving the opposite knee forward and as high as possible before landing. Attempt to cover as much distance to each side with each bound.",
+      "It may help to use a line on the ground to guage distance from side to side.",
+      "Repeat the sequence with the other leg."
+    ],
+    "category": "plyometrics",
+    "images-url": 
+      "https://th.bing.com/th/id/R.7cd7ff974fb80d92b5c495de1166a811?rik=6kPJCfkCF9ttlg&riu=http%3a%2f%2fwww.bodybuilding.com%2fexercises%2fexerciseImages%2fsequences%2f760%2fMale%2fl%2f760_1.jpg&ehk=YpxRY80LC9JCh6z1%2fZDEK8rPfqttcNkcsJUrsyb24ok%3d&risl=&pid=ImgRaw&r=0"
+  }
+]

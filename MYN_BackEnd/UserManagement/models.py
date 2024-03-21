@@ -58,7 +58,7 @@ class UserInformation(models.Model):
 class WorkoutDairy(models.Model):
     userID = models.ForeignKey(User, on_delete=models.CASCADE)
     date = models.DateField()
-    workout = models.JSONField()
+    workout = models.JSONField(default=list)
 
     def __str__(self):
         return str(str(self.userID) + " "+str(self.date))
@@ -103,3 +103,18 @@ class FoodItems(models.Model):
 
     def __str__(self):
         return self.food_item
+    
+class Workout_Data(models.Model):
+    name = models.CharField(max_length=100)
+    force = models.CharField(max_length=100)
+    level = models.CharField(max_length=100)
+    mechanic = models.CharField(max_length=100)
+    equipment = models.CharField(max_length=100)
+    primary_muscles = models.JSONField(default=list)
+    secondary_muscles = models.JSONField(default=list)
+    instructions = models.JSONField(default=list)
+    category = models.CharField(max_length=100)
+    image_url = models.URLField(max_length=1000)
+ 
+    def __str__(self):
+        return self.name

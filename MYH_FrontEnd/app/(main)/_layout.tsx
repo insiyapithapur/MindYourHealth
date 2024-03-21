@@ -217,6 +217,15 @@ const _layout = () => {
           href: null,
         }}
       />
+      <Tabs.Screen
+        // Name of the route to hide.
+        name="AddWorkout"
+        options={{
+          headerShown: false,
+          // This tab will no longer show up in the tab bar.
+          href: null,
+        }}
+      />
     </Tabs>
     
   );

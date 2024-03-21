@@ -17,3 +17,8 @@ class MealDairySerializer(serializers.ModelSerializer):
     class Meta:
         model = models.MealDairy
         fields = ['date' , 'meal']
+
+class WorkoutDataSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = models.Workout_Data
+        fields = '__all__'

@@ -210,96 +210,6 @@ class SearchMealAPIView(APIView):
 
         return Response({'Payload':payload},status=200)
 
-
-# class SearchWorkoutAPIView(APIView):
-#     authentication_classes = []
-#     permission_classes = [AllowAny]
-#     def get(self,request):
-#         name = request.GET.get('name')
-#         payload = []
-#         if name : 
-#             suggestions = models.FoodItems.objects.filter(food_item__istartswith = name)
-#             for suggestion in suggestions:
-#                 payload.append({
-#                     'food_item' : suggestion.food_item
-#                 })
-
-#         return Response({'Payload':payload},status=200)
-    
-
-class AddWorkoutAPIView(APIView):
-    authentication_classes = []
-    permission_classes = [AllowAny]
-
-    def post(self,request):
-        data = JSONParser().parse(request)
-        if data.get('userID') :
-             user_instance = models.User.objects.get(id=data.get('userID'))
-             try : 
-                # already document is there with that date
-                get_date = models.WorkoutDairy.objects.get(userID = user_instance ,date = data.get('date'))
-                get_date.workout += data.get('workout')
-                get_date.save()
-                return Response({"message" : "added successfully"},status=200)
-             except models.WorkoutDairy.DoesNotExist:
-                #  we have to make new document as there is no document with that date
-                 obj = models.WorkoutDairy.objects.create(userID=user_instance  , date=data.get('date'), workout=data.get('workout'))
-                 return Response({"message" : "created document and added successfully"} , status=200)
-        else :
-            return Response({"meassage" : "please send data with userID"},status=400)
-        
-    def delete(self, request):
-        data = JSONParser().parse(request)
-        if data.get('userID'):
-            user_instance = models.User.objects.get(id=data.get('userID'))
-            date = data.get('date')
-            workout_to_delete = data.get('workout')
-
-            if not date or not workout_to_delete:
-                return Response({"message": "Please send data with date and workout to delete"}, status=400)
-
-            try:
-                workout_entry = models.WorkoutDairy.objects.get(date=date, userID=user_instance)
-                updated_workout = [workout for workout in workout_entry.workout if workout not in workout_to_delete]
-                if len(updated_workout) < len(workout_entry.workout):
-                    workout_entry.workout = updated_workout
-                    workout_entry.save()
-                    return Response({"message": "Workout deleted successfully"}, status=200)
-                else:
-                    return Response({"message": "Workout not found in the entry"}, status=404)
-
-            except models.WorkoutDairy.DoesNotExist:
-                return Response({"message": "Workout entry not found for the given date and user"}, status=404)
-        else:
-            return Response({"message": "Please send data with userID"}, status=400)
-
-
-class GetWorkoutAPIView(APIView):
-    authentication_classes = []
-    permission_classes = [AllowAny]
-    def get(self , request):
-        # try:
-        #         user_instance = models.User.objects.get(id=userID)
-        #         print(userID)
-        #         workouts = models.WorkoutDairy.objects.filter(userID=user_instance)
-        #         print(workouts)
-        #         serializer = serializers.WorkoutDairySerializer(workouts, many=True)
-        #         return Response({"data" : serializer.data},status=200)
-        # except models.User.DoesNotExist:
-        #         return Response({"message": "User not found"}, status=404)
-        try:
-            userID = request.GET.get('user_id')
-            user = models.User.objects.get(id=userID)
-            end_date = request.GET.get('end_date')
-        except models.User.DoesNotExist:
-            return Response({'message': 'User not found'}, status=404)
-
-        end_date = datetime.strptime(end_date, '%Y-%m-%d').date()
-        start_date = end_date - timedelta(days=6)
-        workout_data = models.WorkoutDairy.objects.filter(userID=user, date__range=[start_date, end_date])
-        serializer = serializers.WorkoutDairySerializer(workout_data, many=True)
-        return Response(serializer.data)
-
 # class AddmealAPIView(APIView):
 #     authentication_classes = []
 #     permission_classes = [AllowAny]
@@ -487,6 +397,130 @@ class DeleteMealAPIView(APIView):
 
         return Response({"message": "Meal deleted successfully"}, status=200)
 
+class SearchWorkoutAPIView(APIView):
+    authentication_classes = []
+    permission_classes = [AllowAny]
+    def get(self,request):
+        name = request.GET.get('name')
+        payload = []
+        if name : 
+            suggestions = models.Workout_Data.objects.filter(name__istartswith = name)
+            for suggestion in suggestions:
+                payload.append({
+                    'name' : suggestion.name,
+                    'image_url' : suggestion.image_url
+                })
+
+        return Response({'Payload':payload},status=200)
+
+class AddWorkoutAPIView(APIView):
+    authentication_classes = []
+    permission_classes = [AllowAny]
+
+    def post(self,request):
+        data = JSONParser().parse(request)
+        print(data)
+        if data.get('userID') and data.get('workout'):
+            user_instance = models.User.objects.get(id=data.get('userID'))
+            try: 
+                # Check if a meal diary entry already exists for the given date
+                workout_dairy, created = models.WorkoutDairy.objects.get_or_create(userID=user_instance, date=data.get('date'))
+                # Initialize meal list if it doesn't exist or if it's None
+                if workout_dairy.workout is None or not isinstance(workout_dairy.workout, list):
+                    workout_dairy.workout = []
+                # Append each meal from the request to the meal list
+                for workout_data in data.get('workout', []):
+                    workout_dairy.workout.append(workout_data)
+                workout_dairy.save()
+                if created:
+                    return Response({"message": "Created document and added workout successfully"}, status=200)
+                else:
+                    return Response({"message": "Added workout to existing document successfully"}, status=200)
+            except models.WorkoutDairy.DoesNotExist:
+                # Create a new meal diary entry if none exists for the date
+                obj = models.WorkoutDairy.objects.create(userID=user_instance, date=data.get('date'), workout=data.get('workout', []))
+                return Response({"message": "Created new document and added workout successfully"}, status=200)
+        
+    # def delete(self, request):
+    #     data = JSONParser().parse(request)
+    #     if data.get('userID'):
+    #         user_instance = models.User.objects.get(id=data.get('userID'))
+    #         date = data.get('date')
+    #         workout_to_delete = data.get('workout')
+
+    #         if not date or not workout_to_delete:
+    #             return Response({"message": "Please send data with date and workout to delete"}, status=400)
+
+        #     try:
+        #         workout_entry = models.WorkoutDairy.objects.get(date=date, userID=user_instance)
+        #         updated_workout = [workout for workout in workout_entry.workout if workout not in workout_to_delete]
+        #         if len(updated_workout) < len(workout_entry.workout):
+        #             workout_entry.workout = updated_workout
+        #             workout_entry.save()
+        #             return Response({"message": "Workout deleted successfully"}, status=200)
+        #         else:
+        #             return Response({"message": "Workout not found in the entry"}, status=404)
+
+        #     except models.WorkoutDairy.DoesNotExist:
+        #         return Response({"message": "Workout entry not found for the given date and user"}, status=404)
+        # else:
+        #     return Response({"message": "Please send data with userID"}, status=400)
+
+
+# class GetWorkoutAPIView(APIView):
+#     authentication_classes = []
+#     permission_classes = [AllowAny]
+#     def get(self , request):
+#         try:
+#             userID = request.GET.get('userID')
+#             user = models.User.objects.get(id=userID)
+#             end_date = request.GET.get('end_date')
+#         except models.User.DoesNotExist:
+#             return Response({'message': 'User not found'}, status=404)
+
+#         end_date = datetime.strptime(end_date, '%Y-%m-%d').date()
+#         start_date = end_date - timedelta(days=6)
+#         workout_data = models.WorkoutDairy.objects.filter(userID=user, date__range=[start_date, end_date])
+#         serializer = serializers.WorkoutDairySerializer(workout_data, many=True)
+#         return Response(serializer.data)
+class GetWorkoutAPIView(APIView):
+    authentication_classes = []
+    permission_classes = [AllowAny]
+    def get(self, request):
+        try:
+            userID = request.GET.get('userID')
+            print(userID)
+            user = models.User.objects.get(id=userID)
+            
+            date = request.GET.get('date')
+
+            # Filter meal data for the specified user and date range
+            workout_data = models.WorkoutDairy.objects.filter(userID=user, date = date)
+            print(workout_data)
+            # Initialize empty dictionaries for each meal type
+            workouts = []
+            
+            # Iterate through workout entries and extract relevant data
+            for workout_entry in workout_data:
+                workout = {
+                    'date': workout_entry.date,
+                    'workout': [
+                        {
+                            'name': item['name'],
+                            'time': item['time'],
+                            'counts': item['counts'],
+                            'note': item['note']
+                        }
+                        for item in workout_entry.workout
+                    ]
+                }
+                workouts.append(workout)
+            return Response({"workouts":workouts}, status=200)
+        except models.User.DoesNotExist:
+            return Response({'message': 'User not found'}, status=404)
+        except ValueError:
+            return Response({'message': 'Invalid date format. Please provide date in YYYY-MM-DD format'}, status=400)
+        
 class SleepAPIView(APIView):
     authentication_classes = []
     permission_classes = [AllowAny]
@@ -612,4 +646,28 @@ class AddDataAPIView(APIView):
             # Create Food object and save to database
             models.FoodItems.objects.create(food_item=food_item, portion_size=portion_size, calorie=calorie)
         return Response({'message': 'UserInformation updated successfully'} , status = 200)
+    
+class WorkoutDataAPIView(APIView):
+    def post(self, request):
+        # Extract data from request
+        data = request.data
+
+        # Create a new instance of Workout_Data
+        workout_data = models.Workout_Data(
+            name=data.get('name'),
+            force=data.get('force'),
+            level=data.get('level'),
+            mechanic=data.get('mechanic'),
+            equipment=data.get('equipment'),
+            primary_muscles=data.get('primary_muscles', []),
+            secondary_muscles=data.get('secondary_muscles', []),
+            instructions=data.get('instructions', []),
+            category=data.get('category'),
+            image_url=data.get('image_url')
+        )
+
+        # Save the new instance
+        workout_data.save()
+
+        return Response({'message': 'Workout data created successfully'}, status=201)
 
