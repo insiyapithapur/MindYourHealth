@@ -520,7 +520,79 @@ class GetWorkoutAPIView(APIView):
             return Response({'message': 'User not found'}, status=404)
         except ValueError:
             return Response({'message': 'Invalid date format. Please provide date in YYYY-MM-DD format'}, status=400)
+
+class AllWorkoutCategoriesAPIView(APIView):
+    authentication_classes = []
+    permission_classes = [AllowAny]
+    def get(self, request):   
+        try:
+            limit = request.GET.get('limit')
+            if limit:
+                limit = int(limit)
+                all_workout = models.Workout_Data.objects.all()[:limit]
+            else:
+                all_workout = models.Workout_Data.objects.all()
+
+            serializer = serializers.limitWorkoutDataSerializer(all_workout, many=True)
+            # print(serializer.data)
+            return Response({'workout_data': serializer.data}, status=200)
+        except Exception as e:
+            return Response({'message': str(e)}, status=400)
+
+class AllRecepieCategoriesAPIView(APIView):
+    authentication_classes = []
+    permission_classes = [AllowAny]
+    def get(self, request):   
+        try:
+            limit = request.GET.get('limit')
+            if limit:
+                limit = int(limit)
+                all_recepie = models.Recipe_Data.objects.all()[:limit]
+            else:
+                all_recepie = models.Recipe_Data.objects.all()
+
+            serializer = serializers.limitRecipeSerializer(all_recepie, many=True)
+            # print(serializer.data)
+            return Response({'all_recepie': serializer.data}, status=200)
+        except Exception as e:
+            return Response({'message': str(e)}, status=400)
         
+class ALlYogaCategoriesAPIView(APIView):
+    authentication_classes = []
+    permission_classes = [AllowAny]
+    def get(self, request):   
+        try:
+            limit = request.GET.get('limit')
+            if limit:
+                limit = int(limit)
+                all_yoga = models.YogaAsana_data.objects.all()[:limit]
+            else:
+                all_yoga = models.YogaAsana_data.objects.all()
+
+            serializer = serializers.limitYogaAsanaSerializer(all_yoga, many=True)
+            # print(serializer.data)
+            return Response({'all_yoga': serializer.data}, status=200)
+        except Exception as e:
+            return Response({'message': str(e)}, status=400)
+        
+class ALlMeditationCategoriesAPIView(APIView):
+    authentication_classes = []
+    permission_classes = [AllowAny]
+    def get(self, request):   
+        try:
+            limit = request.GET.get('limit')
+            if limit:
+                limit = int(limit)
+                all_meditation = models.MeditationTechnique_data.objects.all()[:limit]
+            else:
+                all_meditation = models.MeditationTechnique_data.objects.all()
+
+            serializer = serializers.limitMeditationSerializer(all_meditation, many=True)
+            # print(serializer.data)
+            return Response({'all_meditation': serializer.data}, status=200)
+        except Exception as e:
+            return Response({'message': str(e)}, status=400)
+
 class SleepAPIView(APIView):
     authentication_classes = []
     permission_classes = [AllowAny]
@@ -648,26 +720,42 @@ class AddDataAPIView(APIView):
         return Response({'message': 'UserInformation updated successfully'} , status = 200)
     
 class WorkoutDataAPIView(APIView):
+    def post(self, request, *args, **kwargs):
+        workout_datas = request.data.get('all_workout', [])
+        for workout_data in workout_datas:
+            serializer = serializers.WorkoutDataSerializer(data=workout_data)
+            if serializer.is_valid():
+                serializer.save()
+            else:
+                return Response(serializer.errors, status=400)
+        return Response("Workout added successfully", status=201)
+
+class RecepieDataAPIView(APIView):
     def post(self, request):
-        # Extract data from request
-        data = request.data
-
-        # Create a new instance of Workout_Data
-        workout_data = models.Workout_Data(
-            name=data.get('name'),
-            force=data.get('force'),
-            level=data.get('level'),
-            mechanic=data.get('mechanic'),
-            equipment=data.get('equipment'),
-            primary_muscles=data.get('primary_muscles', []),
-            secondary_muscles=data.get('secondary_muscles', []),
-            instructions=data.get('instructions', []),
-            category=data.get('category'),
-            image_url=data.get('image_url')
-        )
-
-        # Save the new instance
-        workout_data.save()
-
-        return Response({'message': 'Workout data created successfully'}, status=201)
-
+        serializer = serializers.RecipeSerializer(data=request.data)
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data, status=201)
+        return Response(serializer.errors, status=400)
+    
+class YogaDataAPIView(APIView):
+    def post(self, request, *args, **kwargs):
+        asanas_data = request.data.get('asanas', [])
+        for asana_data in asanas_data:
+            serializer = serializers.YogaAsanaSerializer(data=asana_data)
+            if serializer.is_valid():
+                serializer.save()
+            else:
+                return Response(serializer.errors, status=400)
+        return Response("Yoga asanas added successfully", status=201)
+    
+class MeditationAPIView(APIView):
+    def post(self, request, *args, **kwargs):
+        meditation_techniques = request.data.get('meditation_techniques', [])
+        for meditation_technique in meditation_techniques:
+            serializer = serializers.MeditationSerializer(data=meditation_technique)
+            if serializer.is_valid():
+                serializer.save()
+            else:
+                return Response(serializer.errors, status=400)
+        return Response("meditation techniqueadded successfully", status=201)

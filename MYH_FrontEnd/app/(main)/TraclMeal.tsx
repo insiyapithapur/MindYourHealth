@@ -28,7 +28,7 @@ export default function TraclMeal() {
                 const storedUserID = await AsyncStorage.getItem('userID');
                 setUserID(storedUserID);
                 const formattedDate = formatDate(date);
-                const response = await axios.get(`http://192.168.83.61:8000/getmeals/?user_id=${storedUserID}&date=${formattedDate}`);
+                const response = await axios.get(`http://192.168.240.61:8000/getmeals/?user_id=${storedUserID}&date=${formattedDate}`);
                 setMealData(response.data.meals);
             } catch (error) {
                 console.error('Error fetching meal data:', error);
@@ -52,9 +52,9 @@ export default function TraclMeal() {
     const handleDeleteMeal = async (mealType, mealIndex) => {
         try {
             const formattedDate = formatDate(selectedDate);
-            await axios.delete(`http://192.168.83.61:8000/deletemeal/?user_id=${userID}&date=${formattedDate}&meal_type=${mealType}&meal_index=${mealIndex}`);
+            await axios.delete(`http://192.168.240.61:8000/deletemeal/?user_id=${userID}&date=${formattedDate}&meal_type=${mealType}&meal_index=${mealIndex}`);
             // After successful deletion, fetch updated meal data
-            const response = await axios.get(`http://192.168.83.61:8000/getmeals/?user_id=${userID}&date=${formattedDate}`);
+            const response = await axios.get(`http://192.168.240.61:8000/getmeals/?user_id=${userID}&date=${formattedDate}`);
             setMealData(response.data.meals);
         } catch (error) {
             console.error('Error deleting meal:', error);

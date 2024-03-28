@@ -42,7 +42,7 @@ export default function AddWorkout() {
             // setWorkoutSuggestions(filteredSuggestions);
             try {
                 // Make an HTTP GET request to your backend API
-                const response = await axios.get(`http://192.168.83.61:8000/autosearchWorkout/?name=${text}`);
+                const response = await axios.get(`http://192.168.240.61:8000/autosearchWorkout/?name=${text}`);
                 console.log('API response:', response.data);
                 
                 // Extract meal suggestions from the response data

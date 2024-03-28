@@ -70,7 +70,7 @@ export default function AddDinner(){
     
         console.log("Meal Data:", mealData);
         try{
-            const response = await axios.post('http://192.168.83.61:8000/addmeal', 
+            const response = await axios.post('http://192.168.240.61:8000/addmeal', 
                         mealData,
                         {
                           headers: { "Content-Type": "application/json" },

@@ -43,7 +43,7 @@ export default function SearchDinner() {
             // setMealSuggestions(filteredSuggestions);
             try {
                 // Make an HTTP GET request to your backend API
-                const response = await axios.get(`http://192.168.83.61:8000/autosearchMeal/?name=${text}`);
+                const response = await axios.get(`http://192.168.240.61:8000/autosearchMeal/?name=${text}`);
                 console.log('API response:', response.data);
                 
                 // Extract meal suggestions from the response data

@@ -69,7 +69,7 @@ export default function AddDinner() {
     
         console.log("workout data:", workoutdata);
         try{
-            const response = await axios.post('http://192.168.83.61:8000/addworkout', 
+            const response = await axios.post('http://192.168.240.61:8000/addworkout', 
                         workoutdata,
                         {
                           headers: { "Content-Type": "application/json" },

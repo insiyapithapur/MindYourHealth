@@ -25,7 +25,7 @@ export default function TrackWorkout(){
                 const storedUserID = await AsyncStorage.getItem('userID');
                 setUserID(storedUserID);
                 const formattedDate = formatDate(date);
-                const response = await axios.get(`http://192.168.83.61:8000/getworkout/?userID=${storedUserID}&date=${formattedDate}`);
+                const response = await axios.get(`http://192.168.240.61:8000/getworkout/?userID=${storedUserID}&date=${formattedDate}`);
                 setWorkoutData(response.data.workouts);
                 console.log("response", response.data.workouts);
             } catch (error) {

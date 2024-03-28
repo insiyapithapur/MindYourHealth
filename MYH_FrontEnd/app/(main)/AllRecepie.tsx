@@ -1,32 +1,32 @@
-import { Feather, FontAwesome, Ionicons } from "@expo/vector-icons";
+import { AntDesign, Feather, Ionicons } from "@expo/vector-icons";
+import axios from "axios";
 import Colors from "constants/Colors";
-import { router } from "expo-router";
-import React, { useState } from "react";
-import {Text,View,StyleSheet, TouchableOpacity, TextInput, ScrollView, ImageBackground, Image} from 'react-native'
+import { router } from "expo-router/build/imperative-api";
+import React, { useEffect, useState } from "react";
+import { View,Text, TextInput, TouchableOpacity, ScrollView,Image,StyleSheet } from 'react-native';
 
 export default function AllRecepie(){
     const [searchText, setSearchText] = useState('');
+    const [recepiedata, setRecepieData] = useState([]);
+
+    useEffect(() => {
+        const fetchWorkoutData = async () => {
+            try {
+                const response = await axios.get('http://192.168.240.61:8000/allrecepie/');
+                setRecepieData(response.data.all_recepie);
+                console.log("workout_data",recepiedata)
+            } catch (error) {
+                console.error('Error fetching workout data:', error);
+            }
+        };
+
+        fetchWorkoutData();
+    }, []);
 
     const handleInputChange = (text) => {
         setSearchText(text);
     };
-
-    function handleBreakfast(){
-        router.replace('/(main)/SeeAllBreakfast')
-    }
-
-    function handleLunch(){
-        router.replace('/(main)/SeeAllLunch')
-    }
-
-    function handleSnack(){
-        router.replace('/(main)/SeeAllSnack')
-    }
-
-    function handleDinner(){
-        router.replace('/(main)/SeeAllDinner')
-    }
-
+    
     return(
         <View style={{
             flex : 1,
@@ -34,131 +34,63 @@ export default function AllRecepie(){
             backgroundColor: Colors.dark.background,
             flexDirection:'column',
         }}>
-            <View style={{height:50,backgroundColor:"#875B70",opacity:0.7,borderRadius:10,flexDirection:'row',alignItems:'center',padding:5,marginBottom:10}}>
+            <View style={{height:50,backgroundColor:"#875B70",opacity:0.7,borderRadius:10,flexDirection:'row',alignItems:'center',padding:5,marginBottom:5}}>
                 <Ionicons name="search-sharp" size={30} color="black" />
                     <TextInput
                         style={{flex: 1, fontSize: 18, marginLeft: 10,}}
-                        placeholder={searchText === '' ? 'Search Your Recepie' : ''}
+                        placeholder={searchText === '' ? 'Search Your Recpie' : ''}
                         placeholderTextColor="black"
                         onChangeText={handleInputChange}
                         value={searchText}
                     />
             </View>
-            <ScrollView>
-            <View style={{flex:1,flexDirection:'column',marginTop:20,}}>
-                <View style={{flexDirection:'row',alignItems:'center',justifyContent:'space-between'}}>
-                    <Text style={{fontSize:28,}}>Breakfast</Text>
-                    <TouchableOpacity onPress={handleBreakfast}><Text style={{fontSize:22,color:'#875B70'}}>See all</Text></TouchableOpacity>
-                </View>
-                
-                <ScrollView horizontal showsHorizontalScrollIndicator={false}>
-                <View style={{ flexDirection: 'row'}}>
-                    <TouchableOpacity style={styles.card}>
-                        <Image source={require('../../assets/images/Lunch1.jpeg')} style={{width:150,height:120,borderRadius:10}}/>
-                        <Text style={{fontSize:24,marginLeft:10}}>Oats</Text>
-                        <Text style={{fontSize:20,marginLeft:10,marginTop:5}}>156 kcal</Text>
-                    </TouchableOpacity>
-                    <View style={styles.card}>
-                        <Image source={require('../../assets/images/Lunch1.jpeg')} style={{width:150,height:120,borderRadius:10}}/>
-                        <Text style={{fontSize:24,marginLeft:10}}>Oats</Text>
-                        <Text style={{fontSize:20,marginLeft:10,marginTop:5}}>156 kcal</Text>
-                    </View>
-                    <View style={styles.card}>
-                        <Image source={require('../../assets/images/Lunch1.jpeg')} style={{width:150,height:120,borderRadius:10}}/>
-                        <Text style={{fontSize:24,marginLeft:10}}>Oats</Text>
-                        <Text style={{fontSize:20,marginLeft:10,marginTop:5}}>156 kcal</Text>
-                    </View>
-                </View>
-                 </ScrollView>
-            </View>
-            
-            <View style={{flex:1,flexDirection:'column',marginTop:20,}}>
-                <View style={{flexDirection:'row',alignItems:'center',justifyContent:'space-between'}}>
-                    <Text style={{fontSize:28,}}>Lunch</Text>
-                    <TouchableOpacity onPress={handleLunch}><Text style={{fontSize:22,color:'#875B70'}}>See all</Text></TouchableOpacity>
-                </View>
-                
-                <ScrollView horizontal showsHorizontalScrollIndicator={false}>
-                <View style={{ flexDirection: 'row'}}>
-                    <View style={styles.card}>
-                        <Image source={require('../../assets/images/Lunch1.jpeg')} style={{width:150,height:120,borderRadius:10}}/>
-                        <Text style={{fontSize:24,marginLeft:10}}>Oats</Text>
-                        <Text style={{fontSize:20,marginLeft:10,marginTop:5}}>156 kcal</Text>
-                    </View>
-                    <View style={styles.card}>
-                        <Image source={require('../../assets/images/BoiledVeggis.jpeg')} style={{width:150,height:120,borderRadius:10}}/>
-                        <Text style={{fontSize:24,marginLeft:10}}>Boiled veggies</Text>
-                        <Text style={{fontSize:20,marginLeft:10,marginTop:5}}>156 kcal</Text>
-                    </View>
-                    <View style={styles.card}>
-                        <Image source={require('../../assets/images/dalRice.webp')} style={{width:150,height:120,borderRadius:10}}/>
-                        <Text style={{fontSize:24,marginLeft:10}}>Dal rice</Text>
-                        <Text style={{fontSize:20,marginLeft:10,marginTop:5}}>156 kcal</Text>
-                    </View>
-                </View>
-                 </ScrollView>     
+
+            <View style={{
+                // backgroundColor:"yellow",
+                height:40,
+                flexDirection:'row',
+                alignItems:'center'
+            }}>
+                <Text style={{fontSize:32}}>Recepie</Text>
             </View>
 
-            <View style={{flex:1,flexDirection:'column',marginTop:20,}}>
-                <View style={{flexDirection:'row',alignItems:'center',justifyContent:'space-between'}}>
-                    <Text style={{fontSize:28,}}>Snack</Text>
-                    <TouchableOpacity onPress={handleSnack}><Text style={{fontSize:22,color:'#875B70'}}>See all</Text></TouchableOpacity>
-                </View>
-                
-                <ScrollView horizontal showsHorizontalScrollIndicator={false}>
-                <View style={{ flexDirection: 'row'}}>
-                    <View style={styles.card}>
-                        <Image source={require('../../assets/images/Lunch1.jpeg')} style={{width:150,height:120,borderRadius:10}}/>
-                        <Text style={{fontSize:24,marginLeft:10}}>Oats</Text>
-                        <Text style={{fontSize:20,marginLeft:10,marginTop:5}}>156 kcal</Text>
+            <ScrollView style={{ flex: 1 }}>
+                <View style={{ flexDirection: 'row', justifyContent: 'space-around' }}>
+                    <View style={styles.column}>
+                    {recepiedata.slice(0, Math.ceil(recepiedata.length / 2)).map((recepie, index) => (
+                        <View style={styles.card} key={index}>
+                            <View style={{flex:1}}>
+                                <View style={{flex:1,}}>
+                                    <Image source={{ uri: recepie.image }} style={{ width: 150, height: 120, borderRadius: 10 }} />
+                                    <Text numberOfLines={2} ellipsizeMode="tail" style={{ fontSize: 20, marginLeft: 10, color: 'white' }}>{recepie.title}</Text>
+                                    <Feather name="bookmark" size={30} color="white" style={{ position: 'absolute', top: 10, right: 10 }} />
+                                </View>
+                                <View style={{flex:0.2,justifyContent:'flex-end',marginBottom:2}}>
+                                    <Text style={{ fontSize: 16, color: 'white',marginLeft: 10 }}>{recepie.calories_per_serving}kcal</Text>
+                                </View>
+                            </View>
+                        </View>
+                    ))}
                     </View>
-                    <View style={styles.card}>
-                        <Image source={require('../../assets/images/Lunch1.jpeg')} style={{width:150,height:120,borderRadius:10}}/>
-                        <Text style={{fontSize:24,marginLeft:10}}>Oats</Text>
-                        <Text style={{fontSize:20,marginLeft:10,marginTop:5}}>156 kcal</Text>
-                    </View>
-                    <View style={styles.card}>
-                        <Image source={require('../../assets/images/Lunch1.jpeg')} style={{width:150,height:120,borderRadius:10}}/>
-                        <Text style={{fontSize:24,marginLeft:10}}>Oats</Text>
-                        <Text style={{fontSize:20,marginLeft:10,marginTop:5}}>156 kcal</Text>
-                    </View>
-                </View>
-                 </ScrollView>     
-            </View>
-
-            <View style={{flex:1,flexDirection:'column',marginTop:20,}}>
-                <View style={{flexDirection:'row',alignItems:'center',justifyContent:'space-between'}}>
-                    <Text style={{fontSize:28,}}>Dinner</Text>
-                    <TouchableOpacity onPress={handleDinner}><Text style={{fontSize:22,color:'#875B70'}}>See all</Text></TouchableOpacity>
-                </View>
-                
-                <ScrollView horizontal showsHorizontalScrollIndicator={false}>
-                <View style={{ flexDirection: 'row'}}>
-                    <View style={styles.card}>
-                        <Image source={require('../../assets/images/Lunch1.jpeg')} style={{width:150,height:120,borderRadius:10}}/>
-                        <Text style={{fontSize:24,marginLeft:10}}>Oats</Text>
-                        <Text style={{fontSize:20,marginLeft:10,marginTop:5}}>156 kcal</Text>
-                    </View>
-                    <View style={styles.card}>
-                        <Image source={require('../../assets/images/Lunch1.jpeg')} style={{width:150,height:120,borderRadius:10}}/>
-                        <Text style={{fontSize:24,marginLeft:10}}>Oats</Text>
-                        <Text style={{fontSize:20,marginLeft:10,marginTop:5}}>156 kcal</Text>
-                    </View>
-                    <View style={styles.card}>
-                        <Image source={require('../../assets/images/Lunch1.jpeg')} style={{width:150,height:120,borderRadius:10}}/>
-                        <Text style={{fontSize:24,marginLeft:10}}>Oats</Text>
-                        <Text style={{fontSize:20,marginLeft:10,marginTop:5}}>156 kcal</Text>
+                    <View style={styles.column}>
+                    {recepiedata.slice(Math.ceil(recepiedata.length / 2)).map((recepie, index) => (
+                        <View style={styles.card} key={index}>
+                        <View style={{flex:1}}>
+                                <View style={{flex:1,}}>
+                                    <Image source={{ uri: recepie.image }} style={{ width: 150, height: 120, borderRadius: 10 }} />
+                                    <Text numberOfLines={2} ellipsizeMode="tail" style={{ fontSize: 20, marginLeft: 10, color: 'white' }}>{recepie.title}</Text>
+                                    <Feather name="bookmark" size={30} color="white" style={{ position: 'absolute', top: 10, right: 10 }} />
+                                </View>
+                                <View style={{flex:0.2,justifyContent:'flex-end',marginBottom:2}}>
+                                    <Text style={{ fontSize: 16, color: 'white',marginLeft: 10 }}>{recepie.calories_per_serving}</Text>
+                                </View>
+                            </View>
+                        </View>
+                    ))}
                     </View>
                 </View>
-                 </ScrollView>     
-            </View>
             </ScrollView>
 
-            <View style={styles.box5}>
-                <TouchableOpacity>
-                <Text>Recepie</Text>
-                </TouchableOpacity>
-            </View>
         </View>
     );
 }
@@ -169,6 +101,20 @@ const styles = StyleSheet.create({
         borderRadius: 10,
         width: 150,
         height: 200,
-        marginRight: 10,
-    }
+        marginVertical:10,
+    },
+    // card: {
+        // backgroundColor: '#875B70',
+        // borderRadius: 10,
+        // width: 150,
+        // height: 200,
+        // marginVertical: 10,
+        // justifyContent: 'center',
+        // alignItems: 'center',
+    // },
+    column: {
+        flexDirection: 'column',
+        justifyContent: 'flex-start',
+        alignItems: 'center',
+    },
 })

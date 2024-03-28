@@ -1,0 +1,138 @@
+{
+    "asanas": [
+      {
+        "name": "Downward-Facing Dog (Adho Mukha Svanasana)",
+        "steps": [
+          "Start on your hands and knees with your wrists underneath your shoulders and your knees underneath your hips.",
+          "Inhale as you tuck your toes under your heels. Then exhale to lift your hips, coming into an upside-down V shape called Downward-Facing Dog.",
+          "Spread your fingers wide and create a straight line between your middle fingers and elbows. Work on straightening your legs and lowering your heels toward the ground. Relax your head between your arms and direct your gaze through your legs or up toward your belly button.",
+          "Hold for 5-10 breaths, then release."
+        ],
+        "image": "https://th.bing.com/th/id/OIP.qKVc7QsdENyymmtPgMj4hQHaE8?rs=1&pid=ImgDetMain",
+        "benefits": ["Stretches the shoulders, hamstrings, calves, and hands.", "Strengthens the arms and legs.", "Calms the brain and helps relieve stress and mild depression."],
+        "limitations": ["Avoid this pose if you have carpal tunnel syndrome.", "Avoid if you have high blood pressure or are in late-term pregnancy."]
+      },
+      {
+        "name": "Tree Pose (Vrksasana)",
+        "steps": [
+          "Stand with your feet together and your arms at your sides (Tadasana).",
+          "Shift your weight onto your left foot and place the sole of your right foot inside your left thigh, keeping your hips facing forward.",
+          "Press your right foot into your left thigh while pressing your left thigh into your right foot. Keep your pelvis in a neutral position.",
+          "Bring your hands together in front of your chest (Anjali Mudra) or extend them overhead.",
+          "Hold the pose for 30 seconds to 1 minute, then switch sides."
+        ],
+        "image": "https://th.bing.com/th/id/OIP.5eh3uacRKwDYxaQ5wtKxMAHaHa?rs=1&pid=ImgDetMain",
+        "benefits": ["Improves balance and stability.", "Strengthens the legs, ankles, and core muscles.", "Increases focus and concentration."],
+        "limitations": ["Avoid if you have ankle or knee injuries.", "Avoid if you have low blood pressure."]
+      },
+      {
+        "name": "Warrior I (Virabhadrasana I)",
+        "steps": [
+          "Start in Tadasana (Mountain Pose). Step your feet 3-4 feet apart, with your right foot turned out 90 degrees and your left foot turned in slightly.",
+          "Raise your arms overhead, palms facing each other.",
+          "Bend your right knee so it aligns directly over your ankle, creating a 90-degree angle with your thigh parallel to the floor. Keep your left leg straight and strong.",
+          "Hold for 30 seconds to 1 minute, then switch sides."
+        ],
+        "image": "https://th.bing.com/th/id/OIP.4uHhz29vqzi77pF55KKmbgHaE8?rs=1&pid=ImgDetMain",
+        "benefits": ["Strengthens the legs, arms, and back muscles.", "Stretches the chest, lungs, shoulders, and groin.", "Improves focus and concentration."],
+        "limitations": ["Avoid if you have high blood pressure.", "Avoid if you have knee or hip injuries."]
+      },
+      {
+        "name": "Warrior II (Virabhadrasana II)",
+        "steps": [
+          "Start in Tadasana (Mountain Pose). Step your feet 3-4 feet apart, with your right foot turned out 90 degrees and your left foot turned in slightly.",
+          "Extend your arms out to the sides at shoulder height, palms facing down.",
+          "Bend your right knee so it aligns directly over your ankle, creating a 90-degree angle with your thigh parallel to the floor. Keep your left leg straight and strong.",
+          "Gaze over your right hand.",
+          "Hold for 30 seconds to 1 minute, then switch sides."
+        ],
+        "image": "https://images.squarespace-cdn.com/content/v1/5f05cbb2fcd06836468dcd08/1619646425021-1425Q7M7GG5OQZUTE8EP/Warrior-II-Pose-Virabhadrasana-II",
+        "benefits": ["Strengthens the legs, arms, and back muscles.", "Stretches the chest, lungs, shoulders, and groin.", "Improves focus and concentration."],
+        "limitations": ["Avoid if you have high blood pressure.", "Avoid if you have knee or hip injuries."]
+      },
+      {
+        "name": "Triangle Pose (Trikonasana)",
+        "steps": [
+          "Start in Tadasana (Mountain Pose). Step your feet 3-4 feet apart, with your right foot turned out 90 degrees and your left foot turned in slightly.",
+          "Extend your arms out to the sides at shoulder height, palms facing down.",
+          "Hinge at your right hip and reach your right hand down towards your right shin, ankle, or the floor. Extend your left arm straight up towards the ceiling, with your gaze directed towards your left hand.",
+          "Keep your legs straight and strong, with your weight evenly distributed between both feet.",
+          "Hold for 30 seconds to 1 minute, then switch sides."
+        ],
+        "image": "https://www.verywellfit.com/thmb/9OdtKbsep0Kpv9wMP4vCcM8pVFc=/3000x2000/filters:fill(FFDB5D,1)/trianglepose-5c5b4f3346e0fb0001105d35.jpg",
+        "benefits": ["Stretches the hamstrings, groins, hips, and spine.", "Strengthens the legs, knees, and ankles.", "Improves digestion and reduces anxiety."],
+        "limitations": ["Avoid if you have low blood pressure.", "Avoid if you have neck or back injuries."]
+      },
+      {
+        "name": "Child's Pose (Balasana)",
+        "steps": [
+          "Start on your hands and knees with your wrists underneath your shoulders and your knees underneath your hips.",
+          "Exhale and lower your hips towards your heels, bringing your forehead to the floor. Extend your arms forward or rest them alongside your body with your palms facing up.",
+          "Relax your entire body and focus on deepening your breath. Hold the pose for 1-3 minutes."
+        ],
+        "image": "https://th.bing.com/th/id/OIP.Mn-NUu1nDcK_p3LTqVYt_AHaE7?rs=1&pid=ImgDetMain",
+        "benefits": ["Relieves stress and fatigue.", "Stretches the hips, thighs, and ankles.", "Calms the mind and promotes relaxation."],
+        "limitations": ["Avoid if you have knee or ankle injuries.", "Avoid if you have diarrhea or are pregnant."]
+      },
+      {
+        "name": "Corpse Pose (Savasana)",
+        "steps": [
+          "Lie flat on your back with your legs extended and your arms at your sides, palms facing up.",
+          "Close your eyes and allow your body to relax completely, sinking into the floor.",
+          "Focus on your breath, inhaling and exhaling slowly and deeply.",
+          "Remain in the pose for 5-10 minutes, or as long as you like."
+        ],
+        "image": "https://th.bing.com/th/id/OIP.tjbaMxfN30aC0Y08p37MtAHaET?rs=1&pid=ImgDetMain",
+        "benefits": ["Relaxes the body and mind.", "Reduces stress and anxiety.", "Promotes better sleep."],
+        "limitations": ["None."]
+      }, {
+        "name": "Sphinx Pose (Salamba Bhujangasana)",
+        "steps": [
+          "Lie on your belly with your legs extended and your elbows under your shoulders, forearms on the ground.",
+          "Press your forearms into the ground and lift your chest and head up, keeping your shoulders relaxed.",
+          "Engage your core and lengthen through the crown of your head, keeping your gaze forward or slightly up.",
+          "Hold the pose for 30 seconds to 1 minute, then release."
+        ],
+        "image": "https://th.bing.com/th/id/R.3a01f94c96b3718ac720408a5926aa68?rik=rn2Q35d76VdaGA&riu=http%3a%2f%2ffitsri.com%2fwp-content%2fuploads%2f2020%2f10%2fSalamba-Bhujangasana-Sphinx-Pose-1024x683.jpg&ehk=xD4sZ7xAYP%2b2rHWhhLrjBQpO%2fZHXmkfnFRuhNEca%2fAA%3d&risl=&pid=ImgRaw&r=0",
+        "benefits": ["Stretches the spine, chest, and shoulders.", "Strengthens the back muscles.", "Improves posture and digestion."],
+        "limitations": ["Avoid if you have back injuries or carpal tunnel syndrome."]
+      },
+      {
+        "name": "Cat-Cow Pose (Marjaryasana-Bitilasana)",
+        "steps": [
+          "Start on your hands and knees with your wrists under your shoulders and your knees under your hips.",
+          "Inhale as you arch your back and lift your tailbone and chest towards the ceiling (Cow Pose).",
+          "Exhale as you round your spine and tuck your chin to your chest, pressing through your hands and knees (Cat Pose).",
+          "Continue flowing between Cat and Cow Poses, syncing movement with breath for several rounds."
+        ],
+        "image": "https://i0.wp.com/www.seema.com/wp-content/uploads/2021/09/Cat-Cow-Pose-scaled.jpg?fit=2560%2C1707&ssl=1",
+        "benefits": ["Increases spine flexibility and mobility.", "Stretches the back, torso, and neck muscles.", "Improves coordination and breath awareness."],
+        "limitations": ["Avoid if you have recent neck or back injuries."]
+      },
+      {
+        "name": "Bridge Pose (Setu Bandhasana)",
+        "steps": [
+          "Lie on your back with your knees bent and feet hip-width apart, flat on the floor.",
+          "Press your feet into the floor as you lift your hips towards the ceiling, engaging your glutes and core muscles.",
+          "Interlace your fingers under your back and press your arms and shoulders into the ground.",
+          "Hold the pose for 30 seconds to 1 minute, then release."
+        ],
+        "image": "https://th.bing.com/th/id/OIP.2032Osv3bIv8EE7gKBF-JwHaFF?rs=1&pid=ImgDetMain",
+        "benefits": ["Strengthens the back, glutes, and hamstrings.", "Opens the chest and shoulders.", "Improves spine flexibility and posture."],
+        "limitations": ["Avoid if you have neck or shoulder injuries."]
+      },
+      {
+        "name": "Seated Forward Bend (Paschimottanasana)",
+        "steps": [
+          "Sit on the floor with your legs extended in front of you and feet flexed towards you.",
+          "Inhale as you lengthen your spine, then exhale as you hinge at your hips and fold forward over your legs, reaching for your feet or ankles.",
+          "Keep your back straight and your chest lifted as you fold forward. Engage your core and relax your neck.",
+          "Hold the pose for 30 seconds to 1 minute, then release."
+        ],
+        "image": "https://www.fitsri.com/wp-content/uploads/2020/03/seated-forward-bend-pose.jpg",
+        "benefits": ["Stretches the spine, hamstrings, and shoulders.", "Calms the mind and relieves stress.", "Improves digestion and stimulates the kidneys."],
+        "limitations": ["Avoid if you have lower back injuries or hamstring injuries."]
+      }
+    ]
+}
+  

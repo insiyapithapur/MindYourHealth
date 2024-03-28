@@ -97,7 +97,7 @@ export default function Screen2(){
                 bmr: bmr 
             };
             console.log('UserInfo:', PassingUserInfo);
-            const response = await axios.post('http://192.168.83.61:8000/user_info', 
+            const response = await axios.post('http://192.168.240.61:8000/user_info', 
                         PassingUserInfo,
                         {
                           headers: { "Content-Type": "application/json" },

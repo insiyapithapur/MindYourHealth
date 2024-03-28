@@ -108,13 +108,46 @@ class Workout_Data(models.Model):
     name = models.CharField(max_length=100)
     force = models.CharField(max_length=100)
     level = models.CharField(max_length=100)
-    mechanic = models.CharField(max_length=100)
-    equipment = models.CharField(max_length=100)
+    mechanic = models.CharField(max_length=100,null=True)
+    equipment = models.CharField(max_length=100,null=True)
     primary_muscles = models.JSONField(default=list)
     secondary_muscles = models.JSONField(default=list)
     instructions = models.JSONField(default=list)
     category = models.CharField(max_length=100)
-    image_url = models.URLField(max_length=1000)
+    image_url = models.URLField(max_length=2000)
  
+    def __str__(self):
+        return self.name
+    
+class Recipe_Data(models.Model):
+    title = models.CharField(max_length=255)
+    directions = models.JSONField(default=list)
+    ingredients = models.JSONField(default=list)
+    language = models.CharField(max_length=20)
+    source = models.CharField(max_length=255)
+    url = models.URLField()
+    image = models.URLField(max_length=1000)
+    calories_per_serving = models.IntegerField()
+
+    def __str__(self):
+        return self.title
+    
+class YogaAsana_data(models.Model):
+    name = models.CharField(max_length=100)
+    steps = models.JSONField()
+    image = models.CharField(max_length=1000)
+    benefits = models.JSONField()
+    limitations = models.JSONField()
+
+    def __str__(self):
+        return self.name
+    
+class MeditationTechnique_data(models.Model):
+    name = models.CharField(max_length=100)
+    description = models.TextField()
+    benefits = models.JSONField()
+    steps = models.JSONField()
+    image = models.CharField(max_length=1000)
+
     def __str__(self):
         return self.name

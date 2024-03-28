@@ -23,7 +23,7 @@ export default function Profile() {
     setUserID(storedUserID);
     setusername(storedUsername);
     console.log("storeduserID",storedUserID);
-    const response = await axios.get(`http://192.168.83.61:8000/profile/${storedUserID}`);
+    const response = await axios.get(`http://192.168.240.61:8000/profile/${storedUserID}`);
     console.log("API response:", response.data);
     setUserData(response.data['User Information']);
   };

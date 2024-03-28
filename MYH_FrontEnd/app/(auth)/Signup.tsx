@@ -64,7 +64,7 @@ const Signup = ({}) => {
         };
     
         console.log("User data:", userData);
-          const response = await axios.post('http://192.168.83.61:8000/SignUp', 
+          const response = await axios.post('http://192.168.240.61:8000/SignUp', 
                             userData,
                             {
                               headers: { "Content-Type": "application/json" },

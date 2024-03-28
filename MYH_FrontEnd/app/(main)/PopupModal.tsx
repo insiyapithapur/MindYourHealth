@@ -31,7 +31,7 @@ export default function PopupModal({ visible, onClose, onSave, title,defaultValu
             data['activitylevel'] = inputValue;
           }
           console.log(data)
-          await axios.patch(`http://192.168.83.61:8000/update-profile/${userID}`, data);
+          await axios.patch(`http://192.168.240.61:8000/update-profile/${userID}`, data);
           onSave();
       } catch (error) {
           console.error('Error updating profile:', error);
