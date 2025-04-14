@@ -2,8 +2,6 @@
 
 A comprehensive health and fitness application designed to empower users in their journey towards a healthier lifestyle.
 
-![Slice 1](https://github.com/user-attachments/assets/3e318da9-bfbb-465e-806a-700f2c62130d)
-
 ## Project Overview
 
 MYH (Mind Your Health) is a full-stack mobile application that helps users track their nutrition, workouts, and overall health. It provides personalized plans based on user goals and offers comprehensive tools for dietary management, fitness tracking, and wellness monitoring.
@@ -20,6 +18,18 @@ In today's fast-paced world, maintaining a healthy lifestyle has become more cha
 - **Recipe Browse**: Explore a diverse collection of nutritious recipes
 - **Meditation & Yoga**: Access guided meditation sessions and yoga practices
 - **Menstrual Cycle Tracking**: Track menstrual cycles with an integrated calendar
+
+## System Workflow
+
+![image](https://github.com/user-attachments/assets/70419fe5-1af6-4d59-bb62-288ad35a8685)
+
+## Database Design 
+
+![image](https://github.com/user-attachments/assets/f0070b46-1679-462f-aa71-8aeaae236d3c)
+
+## Figma Design 
+![image](https://github.com/user-attachments/assets/79d310ce-40a3-44b5-9d97-5b5511f52ea0)
+Link: https://www.figma.com/design/gUSMHI6G8i1R6WmJ1JLnXA/Make-your-health?node-id=0-1&t=yS9o5bnRYK13hWQQ-1
 
 ## Technology Stack
 
@@ -160,18 +170,22 @@ In today's fast-paced world, maintaining a healthy lifestyle has become more cha
 - `POST /weight`: Log weight data
 - `GET /weight`: Get weight records
 
-## Screenshots
+## Some Screenshots
 
-### Authentication
-<div style="display: flex; justify-content: space-around;">
-  <img src="/assets/images/login.png" alt="Login Screen" width="200"/>
-  <img src="/assets/images/signup.png" alt="Signup Screen" width="200"/>
-</div>
+Login: ![image](https://github.com/user-attachments/assets/26e2806f-80c9-4a07-89ed-7e806ce04be0)
 
-### Main Features
-<div style="display: flex; justify-content: space-around; flex-wrap: wrap;">
-  <img src="/assets/images/home.png" alt="Home Screen" width="200"/>
-  <img src="/assets/images/meal_tracker.png" alt="Meal Tracker" width="200"/>
-  <img src="/assets/images/workout.png" alt="Workout Tracker" width="200"/>
-  <img src="/assets/images/profile.png" alt="Profile" width="200"/>
-</div>
+SignUp:
+![image](https://github.com/user-attachments/assets/25d3a2ab-a0ca-486a-a30f-609f0a9cf42f)
+![image](https://github.com/user-attachments/assets/688b7f65-79a4-459e-910c-043d9a8af1fd)
+![image](https://github.com/user-attachments/assets/d9ac4252-e3f4-441f-99ca-45be5dafde0d)
+![image](https://github.com/user-attachments/assets/bd6e436e-6599-4bcc-865e-208b293e00b4)
+
+Main Features: 
+![image](https://github.com/user-attachments/assets/d1da5873-282a-44df-8a92-4b94b8213d3a)
+![image](https://github.com/user-attachments/assets/1d07f079-b7a7-4550-80e5-88b55d924103)
+![image](https://github.com/user-attachments/assets/c54eae2f-6152-48bd-a007-c4a3bd62a7a5)
+![image](https://github.com/user-attachments/assets/2bfcb1b5-f7f5-464a-b7de-964a111057d6)
+![image](https://github.com/user-attachments/assets/354e68ea-cb40-4643-890f-52d39ed53356)
+![image](https://github.com/user-attachments/assets/aac74f4f-6c45-427e-a477-e74fed435148)
+![image](https://github.com/user-attachments/assets/93f99bed-5ece-4bfc-94c2-e536aae5a04f)
+![image](https://github.com/user-attachments/assets/8f9b7937-a0fd-4fc4-ab80-931abbfe53c3)
